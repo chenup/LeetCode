@@ -11,6 +11,7 @@
 #### Note
 ```
 1. 注意[3, 2, 3, 1]的情况
+2. 用Hash更好
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/two_sum.cpp)
 ---
