@@ -15,5 +15,19 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/two_sum.cpp)
 ---
-### #2
-dsd
+### #2 Add Two Numbers
+#### Difficulty: Medium
+#### Date: 2017/5/17
+#### Solution
+```
+1. 主要是利用L1作为返回链表，先依次遍历L1和L2，将对应的val相加再加上上一个的进位，算出结果val和进位
+2. 当其中一个链表遍历到终点时就只需要计算另一个的其余元素就行了，如果没有进位了就可以提前结束了
+```
+#### Note
+```
+1. 只能用现有的链表元素拼接不然用局部变量会因为释放而出错
+2. 能不计算的地方就不计算不然会超时
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/add_two_numbers.cpp)
+---
+
