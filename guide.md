@@ -40,7 +40,7 @@
 ```
 #### Note
 ```
-1. 重复字符不一定连续，重复字符的中间的字符不重复 
+1. 重复字符不一定连续，重复字符中间的字符不重复 
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/lswr_characters.cpp)
 ---
