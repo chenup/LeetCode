@@ -13,7 +13,7 @@
 1. 注意[3, 2, 3, 1]的情况
 2. 用Hash更好
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/two_sum.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/ts1.cpp)
 ---
 ### #2 Add Two Numbers
 #### Difficulty: Medium
@@ -28,7 +28,7 @@
 1. 只能用现有的链表元素拼接不然用局部变量会因为释放而出错
 2. 能不计算的地方就不计算不然会超时
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/add_two_numbers.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/atn2.cpp)
 ---
 ### #3 Longest Substring Without Repeating Characters
 #### Difficulty: Medium
@@ -42,7 +42,7 @@
 ```
 1. 重复字符不一定连续，重复字符中间的字符不重复 
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/lswr_characters.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/lswrc3.cpp)
 ---
 ### #4 Median of Two Sorted Arrays
 #### Difficulty: Hard
@@ -56,5 +56,5 @@
 ```
 1. 重复字符不一定连续，重复字符中间的字符不重复 
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/lswr_characters.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/motsa4.cpp)
 ---
