@@ -35,10 +35,12 @@
 #### Date: 2017/5/19
 #### Solution
 ```
-1.   
+1. 用一个数组保存当前字符串里字符出现的位置，如果没有则为-1
+2. 遍历整个字符串，通过cur_l表示当前子字符的长度，max_l表示最大的子字符串的长度,用last表示最新出现的重复字符的位置
 ```
 #### Note
 ```
+1. 重复字符不一定连续，重复字符的中间的字符不重复 
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/lswr_characters.cpp)
 ---
