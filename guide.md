@@ -31,4 +31,14 @@
 [code link](https://github.com/chenup/LeetCode/blob/master/add_two_numbers.cpp)
 ---
 ### #3
-
+#### Difficulty: Medium
+#### Date: 2017/5/19
+#### Solution
+```
+1.   
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/lswr_characters.cpp)
+---
