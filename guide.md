@@ -58,3 +58,17 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/motsa4.cpp)
 ---
+### #5 Longest Palindromic Substring
+#### Difficulty: Medium
+#### Date: 2017/8/11
+#### Solution
+```
+1. 遍历字符串，以每个字符为中心判断两种情况：（一）奇数（二）偶数
+```
+#### Note
+```
+1. 边界问题
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/lps5.cpp)
+---
+
