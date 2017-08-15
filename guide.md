@@ -71,4 +71,31 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/lps5.cpp)
 ---
+### #6 ZigZag Conversion
+#### Difficulty: Medium
+#### Date: 2017/8/13
+#### Solution
+```
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/zzc6.cpp)
+---
+### #7 Reverse Integer
+#### Difficulty: Easy
+#### Date: 2017/8/15
+#### Solution
+```
+1. 通过sprintf将整数转化成字符串
+2. 反转字符串
+3. 用sscanf将字符串转化成整数
+```
+#### Note
+```
+1. 注意负数前面的‘-’
+2. 边界问题，不能超过32位
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ri7.cpp)
+---
 
