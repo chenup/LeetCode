@@ -98,4 +98,22 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/ri7.cpp)
 ---
+### #8 String to Integer (atoi)
+#### Difficulty: Medium
+#### Date: 2017/8/16
+#### Solution
+```
+1. 从字符串里提取有关整数的字符
+2. 将字符转化为整数
+3. 若超过32位int的边界返回0
+```
+#### Note
+```
+1. 注意空格
+2. 边界问题
+3. “+”和“-”的判断，有些时候正整数没有“+”
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sti8.cpp)
+---
+
 
