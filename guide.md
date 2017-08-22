@@ -115,5 +115,18 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/sti8.cpp)
 ---
+### #9 Palindrome Number
+#### Difficulty: Easy
+#### Date: 2017/8/22
+#### Solution
+```
+1. 用sprintf()将整数直接转换为字符串然后判断
+```
+#### Note
+```
+1. 负数直接false
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/pn9.cpp)
+---
 
 
