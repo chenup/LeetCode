@@ -128,5 +128,55 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/pn9.cpp)
 ---
+### #10 Regular Expression Matching
+#### Difficulty: Hard
+#### Date: 2017/8/24
+#### Solution
+```
 
+```
+#### Note
+```
 
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rem10.cpp)
+---
+### #11 Container With Most Water
+#### Difficulty: Medium
+#### Date: 2017/8/26
+#### Solution
+```
+
+```
+#### Note
+```
+
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/cwmw11.cpp)
+---
+### #12 Integer to Roman
+#### Difficulty: Medium
+#### Date: 2017/8/26
+#### Solution
+```
+
+```
+#### Note
+```
+
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/itr12.cpp)
+---
+### #13 Roman to Integer 
+#### Difficulty: Easy
+#### Date: 2017/8/26
+#### Solution
+```
+
+```
+#### Note
+```
+
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rti.cpp)
+---
