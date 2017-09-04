@@ -178,5 +178,18 @@
 ```
 
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rti.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/rti13.cpp)
+---
+### #14 Longest Common Prefix
+#### Difficulty: Easy
+#### Date: 2017/9/4
+#### Solution
+```
+1. 以第一个字符串为主然后和其它字符串进行单个字符匹配，只要不同就退出，直到这个字符串都匹配完
+```
+#### Note
+```
+1. 注意当没有字符串存在的情况下应该返回""
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/lcp14.cpp)
 ---
