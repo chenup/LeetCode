@@ -193,3 +193,31 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/lcp14.cpp)
 ---
+### #15 3Sum
+#### Difficulty: Medium
+#### Date: 2017/9/8
+#### Solution
+```
+1. 先将nums快速排序
+2. 使用next记录相同整数的数目
+3. 然后从最小的开始遍历，与同样的或次小的数相加后再在之后更大的数中寻找匹配的数
+```
+#### Note
+```
+1. 还未accept
+2. 相同的数也可以相加
+3. 3个0
+
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/3s15.cpp)
+---
+### #16 3Sum Closest
+#### Difficulty: Medium
+#### Date: 2017/9/17
+#### Solution
+```
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/3sc16.cpp)
