@@ -216,8 +216,15 @@
 #### Date: 2017/9/17
 #### Solution
 ```
+1. 先将nums快速排序
+2. 使用next记录相同整数的数目
+3. 然后从最小的开始遍历，与同样的或次小的数相加后再在之后更大的数中寻找最近似的数
 ```
 #### Note
 ```
+1. 许多小bug
+2. 越界
+3. 两个负数相加更小
+4. 两个正数相加更大
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/3sc16.cpp)
