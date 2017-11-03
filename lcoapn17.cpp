@@ -5,7 +5,7 @@
 class Solution {
 public:
     vector<string> letterCombinations(string digits) {
-    	    stirng letter[9] = {" ", "", "abc", "def", "ghi", "jkl", ""}; 
+    	    stirng letter[9] = {" ", "", "abc", "def", "ghi", "jkl", ";"}; 
     }
 };
 
