@@ -241,3 +241,51 @@
 
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/lcoapn17.cpp)
+---
+### #20 Valid Parentheses
+#### Difficulty: Easy
+#### Date: 2017/12/10
+#### Solution
+```
+1. 用一个栈存放取出的上半部
+2. 遍历字符串，每次遇到上半部就放入栈中，当访问的是下半部再去栈的顶部取符号，比较是否吻合
+
+```
+#### Note
+```
+1. 开辟一个栈即可
+
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/vp20.cpp)
+---
+### #21 Merge Two Sorted Lists
+#### Difficulty: Easy
+#### Date: 2017/12/10
+#### Solution
+```
+1. 从两个链表中各自取出一个数比较，小的则插入一个返回链表，然后指向下一个，大的不动，等待下次比较
+2. 当其中一个链表已经为空，另一个链表剩余部分直接链入返回链表的尾部
+
+```
+#### Note
+```
+1. 不需要另外开辟空间来存链表
+
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/mtsl21.cpp)
+---
+### #21 Maximum Subarray
+#### Difficulty: Easy
+#### Date: 2017/12/10
+#### Solution
+```
+1. 遍历数组，保存一个全局最大值和局部最大值，在遍历的过程中将整数相加，若和小于当前整数，说明前面数的和为负数可以放弃，以当前的数重新开始寻找，但是要保存上一个序列的最大值
+2. 用局部最大值更新全局最大值
+
+```
+#### Note
+```
+1. 不知道这是不是动态规划的题，通过划分子问题的方法来求解？
+
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ms53.cpp)
