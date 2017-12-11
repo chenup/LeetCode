@@ -288,6 +288,18 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/rdfsa26.cpp)
 ---
+### #27 Remove Element
+#### Difficulty: Easy
+#### Date: 2017/12/11
+#### Solution
+```
+1. 和26题类似
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/re27.cpp)
+---
 ### #53 Maximum Subarray
 #### Difficulty: Easy
 #### Date: 2017/12/10
