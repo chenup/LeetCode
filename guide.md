@@ -274,7 +274,21 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/mtsl21.cpp)
 ---
-### #21 Maximum Subarray
+### #26 Remove Duplicates from Sorted Array
+#### Difficulty: Easy
+#### Date: 2017/12/11
+#### Solution
+```
+1. 因为队列有序，所以只需要判断相邻元素是否相同，如果不同则将长度加一并保存当前的值，相同则删除当前元素然后指向下一个元素
+```
+#### Note
+```
+1. 对vector的操作不熟悉，vector.erase(p)删除迭代器p所指定的元素，返回一个指向被删元素之后元素的迭代器
+2. 对题目的理解不全面
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rdfsa26.cpp)
+---
+### #53 Maximum Subarray
 #### Difficulty: Easy
 #### Date: 2017/12/10
 #### Solution
