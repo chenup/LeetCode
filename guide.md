@@ -274,6 +274,22 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/mtsl21.cpp)
 ---
+### #24 Swap Nodes in Pairs
+#### Difficulty: Medium
+#### Date: 2017/12/11
+#### Solution
+```
+1. 每次交换两个，然后不断迭代
+2. 考虑奇数个和偶数个的情况
+
+```
+#### Note
+```
+1. 偶数个结点和奇数个结点的情况，奇数个最后一个不变
+
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/snip24.cpp)
+---
 ### #26 Remove Duplicates from Sorted Array
 #### Difficulty: Easy
 #### Date: 2017/12/11
