@@ -316,6 +316,32 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/re27.cpp)
 ---
+### #28 Implement strStr()
+#### Difficulty: Easy
+#### Date: 2017/12/12
+#### Solution
+```
+1. 字符串匹配
+2. KMP算法
+```
+#### Note
+```
+1. Runtime Error
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/is28.cpp)
+---
+### #35 Search Insert Position
+#### Difficulty: Easy
+#### Date: 2017/12/12
+#### Solution
+```
+1. 遍历vector，找到第一个比target大的位置即可
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sip35.cpp)
+---
 ### #53 Maximum Subarray
 #### Difficulty: Easy
 #### Date: 2017/12/10
