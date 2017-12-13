@@ -373,3 +373,19 @@
 
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/ms53.cpp)
+---
+### #58 Length of Last Word
+#### Difficulty: Easy
+#### Date: 2017/12/13
+#### Solution
+```
+1. 从字符串的后面往前遍历遇到第一个空格结束
+
+```
+#### Note
+```
+1. 最后一个单词后面可能有许多空格，这个要略过
+
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/lolw58.cpp)
+---
