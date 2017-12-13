@@ -318,15 +318,16 @@
 ---
 ### #28 Implement strStr()
 #### Difficulty: Easy
-#### Date: 2017/12/12
+#### Date: 2017/12/13
 #### Solution
 ```
 1. 字符串匹配
-2. KMP算法
+2. KMP算法，通过确定状态自动机来匹配，文本字符串指针不回退
+3. 暴力求解算法
 ```
 #### Note
 ```
-1. Runtime Error
+1. KMP算法没通过，暴力求解算法通过了
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/is28.cpp)
 ---

@@ -7,6 +7,34 @@ using namespace std;
 class Solution
 {
 public:
+	 int strStr(string haystack, string needle) {
+	 	int i, j;
+	 	int N = haystack.size();
+	 	int M = needle.size();
+	 	for(i = 0, j = 0; i < N && j < M;)
+	 	{
+	 		if(haystack[i] != needle[j])
+	 		{
+	 			i = i - j + 1;
+	 			j = 0;
+	 		}
+	 		else
+	 		{
+	 			i++;
+	 			j++;
+	 		}
+	 	}
+	 	if(j == M)
+	 	{
+	 		return i - M;
+	 	}
+	 	else
+	 	{
+	 		return -1;
+	 	} 
+	 		
+	 }
+	/* KMP
     int strStr(string haystack, string needle) {
         int R = 256;
         int M = needle.size();
@@ -41,7 +69,7 @@ public:
     		return -1;
     	}
     }
-
+	*/
 
 };
 
