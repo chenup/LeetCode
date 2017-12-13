@@ -331,6 +331,21 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/is28.cpp)
 ---
+### #31 Next Permutation
+#### Difficulty: Medium
+#### Date: 2017/12/13
+#### Solution
+```
+1. 从后往前遍历队列，将最后一个值保存在max中，然后访问往前访问，若下一个数大于等于max则更新max后继续往前，否则得到非最大值的索引并退出当前的循环遍历
+2. 将索引+1到队列末尾的数按从小到大排序，因为原先有序则直接收尾替换
+3. 在排序后的子队列中寻找与索引指向的数最接近的大值，然后两者替换
+```
+#### Note
+```
+1. 子队列排序中首尾替换时的索引容易出错
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/np31.cpp)
+---
 ### #35 Search Insert Position
 #### Difficulty: Easy
 #### Date: 2017/12/12
