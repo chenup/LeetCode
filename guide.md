@@ -231,14 +231,17 @@
 ---
 ### #17 Letter Combinations of a Phone Number
 #### Difficulty: Medium
-#### Date: 2017/9/29
+#### Date: 2017/12/14
 #### Solution
 ```
-
+1. 递归算法
+2. 用一个vector保存每个深度的字符，然后等递归返回后再删除
+3. 到达最高深度时就将vector保存的字符拼接成字符串保存到结果中
 ```
 #### Note
 ```
-
+1. 对vector和string的操作不熟悉
+2. 对类的概念不熟悉
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/lcoapn17.cpp)
 ---
@@ -373,6 +376,23 @@
 
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/ms53.cpp)
+---
+### #46 Permutations
+#### Difficulty: Medium
+#### Date: 2017/12/14
+#### Solution
+```
+1. 递归方法
+2. 遍历队列，先取出一个值放入临时vector，然后到一个深度重新遍历剩余的变量，重复操作，等返回时再将临时vector中的值取出，放入到队列原先的位置
+3. 到达最深处队列为空时，将临时vector保存到结果中
+
+```
+#### Note
+```
+1. 对于vector的迭代指针操作、vector的插入和删除操作不是很熟悉
+
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/p46.cpp)
 ---
 ### #58 Length of Last Word
 #### Difficulty: Easy
