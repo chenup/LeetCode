@@ -46,15 +46,18 @@
 ---
 ### #4 Median of Two Sorted Arrays
 #### Difficulty: Hard
-#### Date: 2017/8/2
+#### Date: 2017/12/16
 #### Solution
 ```
-1. 用一个数组保存当前字符串里字符出现的位置，如果没有则为-1
-2. 遍历整个字符串，通过cur_l表示当前子字符的长度，max_l表示最大的子字符串的长度,用last表示最新出现的重复字符的位置
+1. 将中位数K分成两部分，A数组一部分，B数组一部分
+2. 若A数组中的值小于B数组，则A数组消除那一部分数，K更新为剩下部分的值
+3. 继续划分K
+4. 若两者相等，则取其一输出返回
+5. 若K为1，则取A和B当前最小值进行比对后挑出更小的一个输出
 ```
 #### Note
 ```
-1. 重复字符不一定连续，重复字符中间的字符不重复 
+1. 百度的答案，没有考虑到k~~
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/motsa4.cpp)
 ---
@@ -276,6 +279,20 @@
 
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/mtsl21.cpp)
+---
+### #22 Generate Parentheses
+#### Difficulty: Medium
+#### Date: 2017/12/16
+#### Solution
+```
+1. 树结构
+2. "("为左结点，")"为右结点
+```
+#### Note
+```
+1. 对树的递归结构的理解不足
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/gp22.cpp)
 ---
 ### #24 Swap Nodes in Pairs
 #### Difficulty: Medium
