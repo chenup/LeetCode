@@ -411,6 +411,20 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/p46.cpp)
 ---
+### #54 Spiral Matrix
+#### Difficulty: Medium
+#### Date: 2017/12/17
+#### Solution
+```
+1. 按照顺时针方式遍历二维数组，一共有四个方向，右、下、左、上
+
+```
+#### Note
+```
+1. 注意边界
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sm54.cpp)
+---
 ### #58 Length of Last Word
 #### Difficulty: Easy
 #### Date: 2017/12/13
