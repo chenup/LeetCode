@@ -426,3 +426,36 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/lolw58.cpp)
 ---
+### #61 Rotate List
+#### Difficulty: Medium
+#### Date: 2017/12/17
+#### Solution
+```
+1. 将右边的k个结点平移到链表首
+2. 先计算链表的长度l
+3. 再找到第l-k+1个结点的地址作为结果返回
+4. 将两部分链接起来
+```
+#### Note
+```
+1. 左移和右移混淆
+
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rl61.cpp)
+---
+### #67 Add Binary
+#### Difficulty: Easy
+#### Date: 2017/12/17
+#### Solution
+```
+1. 从后往前遍历两个string，将两个string对应的数值相加再加上进位，将得到的结果插入到结果的首部，并计算下个进位的值
+2. 结果字符串的长度为 max(a.size(), b.size()) + c, c为最后的进位值
+
+```
+#### Note
+```
+1. 0x10 和0x02混淆
+
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ab67.cpp)
+---
