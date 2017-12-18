@@ -385,12 +385,10 @@
 ```
 1. 遍历数组，保存一个全局最大值和局部最大值，在遍历的过程中将整数相加，若和小于当前整数，说明前面数的和为负数可以放弃，以当前的数重新开始寻找，但是要保存上一个序列的最大值
 2. 用局部最大值更新全局最大值
-
 ```
 #### Note
 ```
 1. 不知道这是不是动态规划的题，通过划分子问题的方法来求解？
-
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/ms53.cpp)
 ---
@@ -402,12 +400,10 @@
 1. 递归方法
 2. 遍历队列，先取出一个值放入临时vector，然后到一个深度重新遍历剩余的变量，重复操作，等返回时再将临时vector中的值取出，放入到队列原先的位置
 3. 到达最深处队列为空时，将临时vector保存到结果中
-
 ```
 #### Note
 ```
 1. 对于vector的迭代指针操作、vector的插入和删除操作不是很熟悉
-
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/p46.cpp)
 ---
@@ -417,7 +413,6 @@
 #### Solution
 ```
 1. 按照顺时针方式遍历二维数组，一共有四个方向，右、下、左、上
-
 ```
 #### Note
 ```
@@ -431,12 +426,10 @@
 #### Solution
 ```
 1. 从字符串的后面往前遍历遇到第一个空格结束
-
 ```
 #### Note
 ```
 1. 最后一个单词后面可能有许多空格，这个要略过
-
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/lolw58.cpp)
 ---
@@ -453,7 +446,6 @@
 #### Note
 ```
 1. 左移和右移混淆
-
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/rl61.cpp)
 ---
@@ -464,7 +456,6 @@
 ```
 1. 从后往前遍历两个string，将两个string对应的数值相加再加上进位，将得到的结果插入到结果的首部，并计算下个进位的值
 2. 结果字符串的长度为 max(a.size(), b.size()) + c, c为最后的进位值
-
 ```
 #### Note
 ```
@@ -472,4 +463,18 @@
 
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/ab67.cpp)
+---
+### #70 Climbing Stairs
+#### Difficulty: Easy
+#### Date: 2017/12/18
+#### Solution
+```
+1. 动态规划
+2. f(n) = f(n-1) + f(n-2)，爬第n级的台阶等于从第n-1级台阶跨1步和从第n-2级台阶跨2步
+```
+#### Note
+```
+1. f(0)=0, f(1)=1, f(2)=2
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/cs70.cpp)
 ---
