@@ -76,9 +76,11 @@
 ---
 ### #6 ZigZag Conversion
 #### Difficulty: Medium
-#### Date: 2017/8/13
+#### Date: 2017/12/19
 #### Solution
 ```
+1. 找规律题
+2. 拆分成一个个对勾
 ```
 #### Note
 ```

@@ -6,36 +6,41 @@ using namespace std;
 class Solution {
 public:
     string convert(string s, int numRows) {
-        int ssize = s.size();
-        string result;
-        int i,j;
-        int interval;
-        int count = 0;
-        int total = 2 * (numRows - 1);
-        for(i = 0; i < numRows; i++)
+        string result = "";
+        if(numRows == 1)
         {
-        	if(i == 0 || i == numRows - 1)
-        	{
-        		interval = total;
-        		j = i;
-        		while(j < ssize)
-        		{
-        			result[count++] = s[j];
-        			j += interval; 
-        		}
-        	}
-        	else
-        	{
-        		interval = total - 2 * i;
-        		j = i;
-        		while(j < ssize)
-        		{
-        			result[count++] = s[j];
-        			j += interval;
-        			interval = total - interval; 
-        		}
-        	}
-        	
+            return s;
+        }
+        int len = s.size();
+        for(int i = 0; i < numRows; i++)
+        {
+            if(i == 0 || i == numRows - 1)
+            {
+                int tmp = i;
+                while(tmp < len)
+                {
+                    result += s[tmp];
+                    tmp += 2 * (numRows - 1);
+                }
+            }
+            else
+            {
+                int tmp = i;
+                while(tmp < len)
+                {
+                     result += s[tmp];
+                     tmp += 2 * (numRows - i - 1);
+                     if(tmp < len)
+                     {
+                         result += s[tmp];
+                         tmp += 2 * i;
+                     }
+                     else
+                     {
+                        break;
+                     }
+                }
+            }
         }
         return result;
     }
@@ -43,11 +48,9 @@ public:
 
 int main()
 {
-	string input;
-	string result;
-	int num;
-	cin >> input >> num;
-	result = Solution().convert(input, num);
-	cout << result;
-	return 0;
+    string input = "PAYPALISHIRING";
+    int num = 4;
+    string result = Solution().convert(input, num);
+    cout << result;
+    return 0;
 }
