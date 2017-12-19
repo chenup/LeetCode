@@ -146,14 +146,15 @@
 ---
 ### #11 Container With Most Water
 #### Difficulty: Medium
-#### Date: 2017/8/26
+#### Date: 2017/12/19
 #### Solution
 ```
-
+1. 设置两个指针初始时分别指向首部和尾部，计算这两个高度形成的容器的容量，然后选择高度较小的那个指针，往另一个指针靠拢一个位置
+2. 重复过程直到两个指针相遇，返回过程中的最大值
 ```
 #### Note
 ```
-
+1. 暴力求解没有作用，百度大法的
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/cwmw11.cpp)
 ---
@@ -432,6 +433,18 @@
 1. 最后一个单词后面可能有许多空格，这个要略过
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/lolw58.cpp)
+---
+### #59 Spiral Matrix II
+#### Difficulty: Medium
+#### Date: 2017/12/18
+#### Solution
+```
+1. 类似54题，遍历过程中填数
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/smII59.cpp)
 ---
 ### #61 Rotate List
 #### Difficulty: Medium
