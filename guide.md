@@ -491,3 +491,44 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/cs70.cpp)
 ---
+### #118 Pascal's Triangle
+#### Difficulty: Easy
+#### Date: 2017/12/19
+#### Solution
+```
+1. 按照Pascal's triangle的思路走就行了，层层推进
+```
+#### Note
+```
+1. 注意边界
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/pt118.cpp)
+---
+### #119 Pascal's Triangle II
+#### Difficulty: Easy
+#### Date: 2017/12/19
+#### Solution
+```
+1. 类似118题
+2. 只能使用一个vector<int>保存上一层数值
+```
+#### Note
+```
+1. 注意边界
+2. 注意空间复杂度
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ptII119.cpp)
+---
+### #120 Triangle
+#### Difficulty: Medium
+#### Date: 2017/12/19
+#### Solution
+```
+1. 自底向上层层更新，每层的每个数值代表从最底部到它的最短路径值
+2. 最终根元素代表整个结构的最短路径值
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/t120.cpp)
+---
