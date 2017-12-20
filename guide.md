@@ -266,6 +266,23 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/lcoapn17.cpp)
 ---
+### #18 4Sum
+#### Difficulty: Medium
+#### Date: 2017/12/21
+#### Solution
+```
+1. 采用hashtable的方法
+2. 每两个数的sum构成key，value是一个vector<pair>，每个pair保存数的索引
+3. 然后遍历hashtable，每获得一个key1，计算另一个key2 = target - key1，在hashtable中找这个key2是否存在
+4. 去重
+5. 排序输出
+```
+#### Note
+```
+1. K Sum问题
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/4s18.cpp)
+---
 ### #20 Valid Parentheses
 #### Difficulty: Easy
 #### Date: 2017/12/10
