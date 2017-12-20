@@ -9,6 +9,59 @@ class Solution {
 public:
 	vector<vector<int>> threeSum(vector<int>& nums)
 	{
+		vector<vector<int>> result;
+		sort(nums.begin(), nums.end());
+		auto it = nums.begin();
+		while(it != nums.end())
+		{
+			auto l = it + 1;
+			auto r = nums.end() - 1;
+			while(l < r)
+			{
+				if( *l + *r + *it == 0)
+				{
+					vector<int> tmp;
+					tmp.push_back(*it);
+					tmp.push_back(*l);
+					tmp.push_back(*r);
+					result.push_back(tmp);
+					while(l < r && *l == *(l + 1))
+					{
+						l++;
+					}
+					while(l < r && *r == *(r - 1))
+					{
+						r--;
+					}
+					l++;
+					r--;
+
+				}
+				else if(*l + *r + *it < 0)
+				{
+					while(l < r && *l == *(l + 1))
+					{
+						l++;
+					}
+					l++;
+				}
+				else
+				{
+					while(l < r && *r == *(r - 1))
+					{
+						r--;
+					}
+					r--;
+				}
+			}
+			while(it < nums.end() - 1 && *it == *(it + 1))
+			{
+				it++;
+			}
+			it++;
+		}
+		return result;
+		/*
 		sort(nums.begin(), nums.end());
 		vector<vector<int>> vvi;
 		int n[3];
@@ -125,6 +178,7 @@ public:
 			p = p + 1;
 		}
 		return vvi;
+		*/
 	}
 };
 
