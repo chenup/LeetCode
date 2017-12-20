@@ -162,27 +162,39 @@
 ---
 ### #12 Integer to Roman
 #### Difficulty: Medium
-#### Date: 2017/8/26
+#### Date: 2017/12/20
 #### Solution
 ```
-
+1.	I = 1;
+	V = 5;
+	X = 10;
+	L = 50;
+	C = 100;
+	D = 500;
+	M = 1000;
+2. 每两个阶段的之间有一个减法的表示，比如900=CM， C写在M前面表示M-C，也就是9*10^n和4*10^n的表示
+3. 贪心的做法，每次选择能表示的最大值，把对应的字符串连起来。 
+4. 例如： 434: CDXXXIV
 ```
 #### Note
 ```
-
+1. 百度大法好
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/itr12.cpp)
 ---
 ### #13 Roman to Integer 
 #### Difficulty: Easy
-#### Date: 2017/8/26
+#### Date: 2017/12/20
 #### Solution
 ```
-
+1. 与12题类似，反向过程
+2. 由键取值，一个匹配的过程
+3. 事先做好一个map表，然后查表
+4. 将key对应的值加到result
 ```
 #### Note
 ```
-
+1. 对map的使用不熟
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/rti13.cpp)
 ---
