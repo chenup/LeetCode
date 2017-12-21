@@ -283,6 +283,21 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/4s18.cpp)
 ---
+### #19 Remove Nth Node From End of List
+#### Difficulty: Medium
+#### Date: 2017/12/21
+#### Solution
+```
+1. 用三个指针记录访问过的位置
+2. 链表拼接
+3. 注意删除链表头和n为0的情况
+```
+#### Note
+```
+1. 从尾部开始删除
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/4s18.cpp)
+---
 ### #20 Valid Parentheses
 #### Difficulty: Easy
 #### Date: 2017/12/10
@@ -401,6 +416,19 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/np31.cpp)
 ---
+### #34 Search for a Range
+#### Difficulty: Medium
+#### Date: 2017/12/21
+#### Solution
+```
+1. 二分查找
+2. 根据返回的索引的前后值是否相同来确定范围
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sfar34.cpp)
+---
 ### #35 Search Insert Position
 #### Difficulty: Easy
 #### Date: 2017/12/12
@@ -441,6 +469,21 @@
 1. 对于vector的迭代指针操作、vector的插入和删除操作不是很熟悉
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/p46.cpp)
+---
+### #46 Permutations II
+#### Difficulty: Medium
+#### Date: 2017/12/21
+#### Solution
+```
+1. 基本思路和46题一样
+2. 先将输入数组快排
+3. 每次取数时先判断在它之前值相等的数是否取出，没有就不取，这是去重操作
+```
+#### Note
+```
+1. 百度大法
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/pII47.cpp)
 ---
 ### #54 Spiral Matrix
 #### Difficulty: Medium
