@@ -441,19 +441,36 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/sip35.cpp)
 ---
-### #53 Maximum Subarray
-#### Difficulty: Easy
-#### Date: 2017/12/10
+### #39 Combination Sum
+#### Difficulty: Medium
+#### Date: 2017/12/22
 #### Solution
 ```
-1. 遍历数组，保存一个全局最大值和局部最大值，在遍历的过程中将整数相加，若和小于当前整数，说明前面数的和为负数可以放弃，以当前的数重新开始寻找，但是要保存上一个序列的最大值
-2. 用局部最大值更新全局最大值
+1. 先快排输入的数组
+2. 用二分法得到小于等于target的最近位置end
+3. 通过递归找到所有满足和为target的元素，范围在0到end
 ```
 #### Note
 ```
-1. 不知道这是不是动态规划的题，通过划分子问题的方法来求解？
+1. 注意别逆向输出
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ms53.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/cs39.cpp)
+---
+### #40 Combination Sum II
+#### Difficulty: Medium
+#### Date: 2017/12/23
+#### Solution
+```
+1. 类似39题
+2. 递归过程中去重
+3. 用set去重
+```
+#### Note
+```
+1. 二分法使用有误
+2. 递归过程中return换成continue
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/csII40.cpp)
 ---
 ### #46 Permutations
 #### Difficulty: Medium
@@ -470,7 +487,7 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/p46.cpp)
 ---
-### #46 Permutations II
+### #47 Permutations II
 #### Difficulty: Medium
 #### Date: 2017/12/21
 #### Solution
@@ -484,6 +501,20 @@
 1. 百度大法
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/pII47.cpp)
+---
+### #53 Maximum Subarray
+#### Difficulty: Easy
+#### Date: 2017/12/10
+#### Solution
+```
+1. 遍历数组，保存一个全局最大值和局部最大值，在遍历的过程中将整数相加，若和小于当前整数，说明前面数的和为负数可以放弃，以当前的数重新开始寻找，但是要保存上一个序列的最大值
+2. 用局部最大值更新全局最大值
+```
+#### Note
+```
+1. 不知道这是不是动态规划的题，通过划分子问题的方法来求解？
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ms53.cpp)
 ---
 ### #54 Spiral Matrix
 #### Difficulty: Medium
