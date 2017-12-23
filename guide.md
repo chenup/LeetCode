@@ -416,6 +416,18 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/np31.cpp)
 ---
+### #33 Search in Rotated Sorted Array
+#### Difficulty: Medium
+#### Date: 2017/12/23
+#### Solution
+```
+1. 先遍历，找到右值比左值小的点再二分法
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sirsa33.cpp)
+---
 ### #34 Search for a Range
 #### Difficulty: Medium
 #### Date: 2017/12/21
@@ -471,6 +483,20 @@
 2. 递归过程中return换成continue
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/csII40.cpp)
+---
+### #43 Multiply Strings
+#### Difficulty: Medium
+#### Date: 2017/12/23
+#### Solution
+```
+1. 乘法变加法
+2. 分段相加
+3. 用vector<int>保存临时结果，最后转化成string
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ms43.cpp)
 ---
 ### #46 Permutations
 #### Difficulty: Medium
