@@ -528,6 +528,57 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/pII47.cpp)
 ---
+### #48 Rotate Image
+#### Difficulty: Medium
+#### Date: 2017/12/24
+#### Solution
+```
+1. 将i行的每列元素依次插入到每行的倒数第i列
+2. 删除i行的前n个元素
+```
+#### Note
+```
+1. 对插入和删除操作不熟悉
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ri48.cpp)
+---
+### #49 Group Anagrams
+#### Difficulty: Medium
+#### Date: 2017/12/24
+#### Solution
+```
+1. 把错位词的字符顺序重新排列，那么会得到相同的结果，所以重新排序是判断是否互为错位词的方法
+2. 由于错位词重新排序后都会得到相同的字符串，我们以此作为key，将所有错位词都保存到字符串数组中，建立key和字符串数组之间的映射
+3. 最后再存入结果res中即可
+```
+#### Note
+```
+1. 百度大法
+2. sort可以对string排序
+3. map中key自动排序
+4. 用一个大小为26的int数组来统计每个单词中字符出现的次数，然后将int数组转为一个唯一的字符串，跟字符串数组进行映射，这样我们就不用给字符串排序了
+5. 用hash表，但是可能有误，毕竟hash值可能相同，值不同
+6. 对于c++的使用不熟，很简单的程序写了很久
+7. 案例给的不清楚
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ga49.cpp)
+---
+### #50 Pow(x, n)
+#### Difficulty: Medium
+#### Date: 2017/12/24
+#### Solution
+```
+1. 递归
+2. n为偶数则，pow(x, n / 2) * pow(x, n / 2)
+3. n为奇数则，pow(x, n / 2) * pow(x, n / 2) * x
+4. n为0时，返回1
+```
+#### Note
+```
+1. x可能为0，n可能为负，n也可能为0
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/p50.cpp)
+---
 ### #53 Maximum Subarray
 #### Difficulty: Easy
 #### Date: 2017/12/10
