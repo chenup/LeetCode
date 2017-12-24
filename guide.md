@@ -606,6 +606,21 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/sm54.cpp)
 ---
+### #55 Jump Game
+#### Difficulty: Medium
+#### Date: 2017/12/24
+#### Solution
+```
+1. 可以用贪心法和动态规划（递归）
+2. 最好的是贪心法，从右往左，要到达最右边，先要到达次右边，以此类推，最后看发出点是否为0，为0则为true，currPosition + nums[currPosition] >= leftmostGoodIndex
+```
+#### Note
+```
+1. 试错了很多次
+2. leetcode上提供了4种解法
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/jg55.cpp)
+---
 ### #58 Length of Last Word
 #### Difficulty: Easy
 #### Date: 2017/12/13
