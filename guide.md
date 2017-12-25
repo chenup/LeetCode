@@ -625,6 +625,23 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/jg55.cpp)
 ---
+### #56 Merge Intervals
+#### Difficulty: Medium
+#### Date: 2017/12/25
+#### Solution
+```
+1. 先以interval.start为主对intervals排序
+2. 如果it.end < (it+1).start时则移动到下一个元素
+3. 否则看是否it.end < (it+1).end，如果是则进行更新
+4. 删除(it+1)，重复上述过程
+```
+#### Note
+```
+1. leetcode上提供了解法
+2. 对sort(s,e,cmp)的cmp的用法不熟
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/mi56.cpp)
+---
 ### #58 Length of Last Word
 #### Difficulty: Easy
 #### Date: 2017/12/13
