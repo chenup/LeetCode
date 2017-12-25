@@ -667,6 +667,22 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/smII59.cpp)
 ---
+### #60 Permutation Sequence
+#### Difficulty: Medium
+#### Date: 2017/12/25
+#### Solution
+```
+1. 直接根据k来计算每次应该访问第几个元素,然后将该元素从队列删除
+2. 递归法
+3. k / n!
+4. k % n!
+```
+#### Note
+```
+1. k应该从0开始计算，而不是1，否则/和%运算会出错
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ps60.cpp)
+---
 ### #61 Rotate List
 #### Difficulty: Medium
 #### Date: 2017/12/17
