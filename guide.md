@@ -135,14 +135,18 @@
 ---
 ### #10 Regular Expression Matching
 #### Difficulty: Hard
-#### Date: 2017/8/24
+#### Date: 2017/12/25
 #### Solution
 ```
-
+1. 用有向图来表示非确定性状态自动机(NFA)
+2. 确定初始状态通过空操作能够到达的集合
+3. 遍历这个集合然后获得新的集合
+4. 将文本的字符与这个集合中的字符匹配，有则继续，没有则为false
+5. 当文本匹配结束后，集合中要包括结束状态才能返回true
 ```
 #### Note
 ```
-
+1. 这只是一种简化的正则表达式匹配
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/rem10.cpp)
 ---
