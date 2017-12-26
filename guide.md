@@ -699,6 +699,50 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/rl61.cpp)
 ---
+### #62 Unique Paths
+#### Difficulty: Medium
+#### Date: 2017/12/26
+#### Solution
+```
+1. 动态规划
+2. 用空间换时间，通过(m + 1) * (n + 1)的数组记录步数，不知道是否还可以只记录最近的步数节省空间
+3. f(m, n) = f(m - 1, n) + f(m, n - 1)，如果表中已经存在则直接使用，没有则在计算后填入表中
+4. 初始状态如f(0, 0), f(1, 1), f(1, 2), f(1, 0), f(0, 1)这些
+```
+#### Note
+```
+1. 对子问题的划分有问题
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/up62.cpp)
+---
+### #63 Unique Paths II
+#### Difficulty: Medium
+#### Date: 2017/12/26
+#### Solution
+```
+1. 和62题类似
+2. 当遇到障碍物时，将该点的路径数设为0
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/up63.cpp)
+---
+### #64 Minimum Path Sum
+#### Difficulty: Medium
+#### Date: 2017/12/26
+#### Solution
+```
+1. 和62题类似
+2. f(m, n) = min(f(m, n - 1), f(m - 1, n)) + a[m][n]
+3. f(0, n) = f(0, n - 1) + a[0][n]
+4. f(m, 0) = f(m - 1, 0) + a[m][0]
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/mps64.cpp)
+---
 ### #67 Add Binary
 #### Difficulty: Easy
 #### Date: 2017/12/17
