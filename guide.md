@@ -772,6 +772,21 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/cs70.cpp)
 ---
+### #71 Simplify Path
+#### Difficulty: Medium
+#### Date: 2017/12/27
+#### Solution
+```
+1. 用一个vector存储目录，不存"/"
+2. 当path[i] == "/"时，如果之前str为"..",则pop; 如果为".",则什么都不做; 如果非空则push
+3. 还要考虑string尾部不是"/"时，也要对剩下的str进行操作
+```
+#### Note
+```
+1. 需要记规则
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sp71.cpp)
+---
 ### #73 Set Matrix Zeroes
 #### Difficulty: Medium
 #### Date: 2017/12/27
@@ -785,6 +800,22 @@
 ```
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/smz73.cpp)
+---
+### #74 Search a 2D Matrix
+#### Difficulty: Medium
+#### Date: 2017/12/27
+#### Solution
+```
+1. 二分法
+2. 将k转化成i和j
+3. i = k / n
+4. j = k % n
+```
+#### Note
+```
+1. 注意矩阵为空的情况
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sa2m74.cpp)
 ---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
