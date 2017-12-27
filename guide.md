@@ -772,6 +772,20 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/cs70.cpp)
 ---
+### #73 Set Matrix Zeroes
+#### Difficulty: Medium
+#### Date: 2017/12/27
+#### Solution
+```
+1. 遍历矩阵里的所有元素，把为0元素的行和列分别保存在两个set中
+2. 遍历行set，把对应的行的元素都设为0
+3. 遍历列set，把对应的列的元素都设为0
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/smz73.cpp)
+---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
 #### Date: 2017/12/19
