@@ -817,6 +817,18 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/sa2m74.cpp)
 ---
+### #75 Sort Colors
+#### Difficulty: Medium
+#### Date: 2017/12/27
+#### Solution
+```
+1. 0插入到队首，3插入到队尾，1不变
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sc75.cpp)
+---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
 #### Date: 2017/12/19
