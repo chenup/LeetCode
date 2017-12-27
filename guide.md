@@ -829,6 +829,36 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/sc75.cpp)
 ---
+### #77 Combinations
+#### Difficulty: Medium
+#### Date: 2017/12/27
+#### Solution
+```
+1. 递归
+2. 每次遍历i到n - k + 1
+3. 到k为0为止
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/c77.cpp)
+---
+### #78 Subsets
+#### Difficulty: Medium
+#### Date: 2017/12/27
+#### Solution
+```
+1. 递归
+2. 每次遍历从i到n
+3. 每个中间过程保存到结果
+4. i超过n结束
+5. 空集要加到结果中
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/s78.cpp)
+---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
 #### Date: 2017/12/19
