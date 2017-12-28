@@ -859,6 +859,23 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/s78.cpp)
 ---
+### #79 Word Search
+#### Difficulty: Medium
+#### Date: 2017/12/28
+#### Solution
+```
+1. 递归
+2. 有left、up、right和down四种走法
+3. 匹配
+```
+#### Note
+```
+1. leetcode用例感觉有问题
+2. 没通过
+3. 思路是对的，但是别人的用例能过
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ws79.cpp)
+---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
 #### Date: 2017/12/19
