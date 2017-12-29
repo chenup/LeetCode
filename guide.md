@@ -876,6 +876,55 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/ws79.cpp)
 ---
+### #80 Remove Duplicates from Sorted Array II
+#### Difficulty: Medium
+#### Date: 2017/12/29
+#### Solution
+```
+1. 与第26题类似
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rdfsaII80.cpp)
+---
+### #81 Search in Rotated Sorted Array II
+#### Difficulty: Medium
+#### Date: 2017/12/29
+#### Solution
+```
+1. 与第33题类似
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sirsaII81.cpp)
+---
+### #82 Remove Duplicates from Sorted List II
+#### Difficulty: Medium
+#### Date: 2017/12/29
+#### Solution
+```
+1. 遍历链表，找出一段相同值的头的前置结点和尾结点
+2. 考虑原head的值被清除的情况
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rdfslII82.cpp)
+---
+### #83 Remove Duplicates from Sorted List
+#### Difficulty: Medium
+#### Date: 2017/12/29
+#### Solution
+```
+1. 和82题类似
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rdfsl83.cpp)
+---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
 #### Date: 2017/12/19
