@@ -348,6 +348,22 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/gp22.cpp)
 ---
+### #23 Merge k Sorted Lists
+#### Difficulty: Hard
+#### Date: 2017/12/31
+#### Solution
+```
+1. 取k个链表头结点形成k set
+2. k set构建AVL，自平衡二叉树
+3. 取最小值，然后插入最小值的下一个结点
+4. 用map来实现，map底层实现是红黑树
+```
+#### Note
+```
+1. 2 sorted是k sorted的一种特例
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/mksl23.cpp)
+---
 ### #24 Swap Nodes in Pairs
 #### Difficulty: Medium
 #### Date: 2017/12/11
@@ -360,9 +376,21 @@
 #### Note
 ```
 1. 偶数个结点和奇数个结点的情况，奇数个最后一个不变
-
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/snip24.cpp)
+---
+### #25 Reverse Nodes in k-Group
+#### Difficulty: Hard
+#### Date: 2017/12/31
+#### Solution
+```
+1. 按照题目思路走，主要是指针的运用
+2. 相当于遍历了链表两遍
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/mksl23.cpp)
 ---
 ### #26 Remove Duplicates from Sorted Array
 #### Difficulty: Easy
@@ -420,6 +448,23 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/np31.cpp)
 ---
+### #32 Longest Valid Parentheses
+#### Difficulty: Hard
+#### Date: 2017/12/31
+#### Solution
+```
+1. 先计算满足匹配条件的‘）’的索引
+2. 计算后一个索引离前一个索引的距离
+3. 有1，2和大于2的情况
+4. 从后往前遍历，若为1和2则保持，如果大于2，则比较该数与1的总数+2的大小，若小于等于则说明还有更长的匹配串，否则计算新的匹配串
+5. 保存当中的最大值
+6. 返回最大值乘2
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/lvp32.cpp)
+---
 ### #33 Search in Rotated Sorted Array
 #### Difficulty: Medium
 #### Date: 2017/12/23
@@ -456,6 +501,25 @@
 ```
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/sip35.cpp)
+---
+### #36 Valid Sudoku
+#### Difficulty: Medium
+#### Date: 2017/12/31
+#### Solution
+```
+1. 时间换空间，遍历矩阵三次
+2. 空间换时间，遍历矩阵一次，但是用三个矩阵来记录结果，分别对应行、列和小矩阵
+3. 每行不能重复
+4. 每列不能重复
+5. 每个小矩阵不能重复
+```
+#### Note
+```
+1. 没跑出来
+2. 百度大法
+3. vector<vector<char>> 出错
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/vs36.cpp)
 ---
 ### #39 Combination Sum
 #### Difficulty: Medium
