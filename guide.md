@@ -989,6 +989,90 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/rdfsl83.cpp)
 ---
+### #86 Partition List
+#### Difficulty: Medium
+#### Date: 2018/1/2
+#### Solution
+```
+1. 指针的运用
+2. 通过几个指针在遍历链表的过程中完成分区
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/pl86.cpp)
+---
+### #88 Merge Sorted Array
+#### Difficulty: Easy
+#### Date: 2018/1/2
+#### Solution
+```
+1. 毕竟两个队列元素的大小，如果第二个队列里更小的就插入到第一个里面
+```
+#### Note
+```
+1. 清除第一个队列里多余的元素
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/msa88.cpp)
+---
+### #89 Gray Code
+#### Difficulty: Medium
+#### Date: 2018/1/2
+#### Solution
+```
+1. 格雷码是一种模型题，如果知道规律很好解答
+2. 通过递归方法解答的没做对
+3. 比较好的还有镜像方法
+4. 遍历0 ~ 2^n - 1 ,其中 格雷码为 i ^ (i >> 1)
+```
+#### Note
+```
+1. 百度大法好
+2. 4种方法
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/gc89.cpp)
+---
+### #90 Subsets II
+#### Difficulty: Medium
+#### Date: 2018/1/2
+#### Solution
+```
+1. 快排
+2. 递归
+3. 去重
+```
+#### Note
+``` 
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sII90.cpp)
+---
+### #91 Decode Ways
+#### Difficulty: Medium
+#### Date: 2018/1/2
+#### Solution
+```
+1. 动态规划
+2. f3 = f2 * judage2 + f1 * judge1
+3. 注意0的情况
+```
+#### Note
+``` 
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/dw91.cpp)
+---
+### #92 Reverse Linked List II
+#### Difficulty: Medium
+#### Date: 2018/1/2
+#### Solution
+```
+1. 指针的运用
+2. 遍历一遍链表
+```
+#### Note
+``` 
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rllII92.cpp)
+---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
 #### Date: 2017/12/19
