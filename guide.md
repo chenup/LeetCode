@@ -1073,6 +1073,36 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/rllII92.cpp)
 ---
+### #93 Restore IP Addresses
+#### Difficulty: Medium
+#### Date: 2018/1/3
+#### Solution
+```
+1. 递归
+```
+#### Note
+```
+1. 注意0的情况
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ria93.cpp)
+---
+### #94 Binary Tree Inorder Traversal 
+#### Difficulty: Medium
+#### Date: 2018/1/3
+#### Solution
+```
+1. 用栈实现
+2. 记录当前结点是否被访问
+```
+#### Note
+```
+1. 中序遍历： 左根右
+2. 先序遍历： 根左右
+3. 后序遍历： 左右根
+4. 更好的方法可以不用visit
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/btit94.cpp)
+---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
 #### Date: 2017/12/19
