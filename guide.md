@@ -433,6 +433,21 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/is28.cpp)
 ---
+### #29 Divide Two Integers
+#### Difficulty: Medium
+#### Date: 2018/1/6
+#### Solution
+```
+1. 数值处理问题
+2. 以2^n为基进行处理，每次找出最大k满足 m - n * 2^k > 0, res += 2^k, 迭代m, 直到m < n
+3. 边界问题，除数为0 或者 被除数是最小负数，除数是-1时，结果越界
+```
+#### Note
+```
+1. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/dti29.cpp)
+---
 ### #31 Next Permutation
 #### Difficulty: Medium
 #### Date: 2017/12/13
@@ -520,6 +535,21 @@
 3. vector<vector<char>> 出错
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/vs36.cpp)
+---
+### #38 Count and Say
+#### Difficulty: Easy
+#### Date: 2018/1/6
+#### Solution
+```
+1. 后一个字符串是从前一个字符串推出来的
+2. 要得到第n个字符串就要先获得前n-1个
+3. 用count值记录连续的相同值
+```
+#### Note
+```
+1. 百度大法
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/cas38.cpp)
 ---
 ### #39 Combination Sum
 #### Difficulty: Medium
@@ -1102,6 +1132,40 @@
 4. 更好的方法可以不用visit
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/btit94.cpp)
+---
+### #95 Unique Binary Search Trees II
+#### Difficulty: Medium
+#### Date: 2018/1/6
+#### Solution
+```
+1. 与96题类似
+2. 递归
+3. 动态分配内存
+4. 选取一个点，然后对左子树和右子树进行操作
+```
+#### Note
+```
+1. 百度大法好
+2. new 动态为变量分配内存，返回内存地址
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ubstII95.cpp)
+---
+### #96 Unique Binary Search Trees
+#### Difficulty: Medium
+#### Date: 2018/1/6
+#### Solution
+```
+1. 令h(0)=1，h(1)=1，Catalan数满足递归式：h(n) = h(0)*h(n-1) + h(1)*h(n-2) + ... + h(n-1)*h(0)  (n>=2)
+2. 该递推关系的解为：h(n) = C(2n,n)/(n+1)，n=0,1,2,3,... （其中C(2n,n)表示2n个物品中取n个的组合数
+3. 动态规划
+4. 从处理子问题的角度来看，选取一个结点为根，就把结点切成左右子树，以这个结点为根的可行二叉树数量就是左右子树可行二叉树数量的乘积，所以总的数量是将以所有结点为根的可行结果累加起来。
+```
+#### Note
+```
+1. 百度大法好
+2. 用组合数会溢出
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ubst96.cpp)
 ---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
