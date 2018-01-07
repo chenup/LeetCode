@@ -837,6 +837,20 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/mps64.cpp)
 ---
+### #66 Plus One
+#### Difficulty: Medium
+#### Date: 2018/1/7
+#### Solution
+```
+1. 将一个非负整数+1后用vector来表示
+```
+#### Note
+```
+1. 百度大法好
+2. 其实很简单
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/po66.cpp)
+---
 ### #67 Add Binary
 #### Difficulty: Easy
 #### Date: 2017/12/17
@@ -851,6 +865,25 @@
 
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/ab67.cpp)
+---
+### #69 Sqrt(x)
+#### Difficulty: Easy
+#### Date: 2018/1/7
+#### Solution
+```
+1. 二分法，和二分查找类似
+2. m * m <= x < (m + 1) * (m + 1)
+3. 将乘法变为除法，否则会溢出
+```
+#### Note
+```
+1. 百度大法好
+2. 第二种方法是牛顿法
+3. y_(n+1) = y_n - f(y_n) / f'(y_n) = (y_n + x / y_n) / 2
+4. f(y) = y^2 - x
+5. f(y) = 0
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/s69.cpp)
 ---
 ### #70 Climbing Stairs
 #### Difficulty: Easy
