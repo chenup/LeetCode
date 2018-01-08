@@ -1200,6 +1200,20 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/ubst96.cpp)
 ---
+### #98 Validate Binary Search Tree
+#### Difficulty: Medium
+#### Date: 2018/1/8
+#### Solution
+```
+1. 中序遍历
+2. 递归
+3. 中序遍历的结果是后一个元素都比前一个元素大
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/vbst98.cpp)
+---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
 #### Date: 2017/12/19
