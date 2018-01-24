@@ -1214,6 +1214,61 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/vbst98.cpp)
 ---
+### #100 Same Tree
+#### Difficulty: Easy
+#### Date: 2018/1/8
+#### Solution
+```
+1. 先序遍历
+2. 递归
+3. 比较对应结点
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/st100.cpp)
+---
+### #101 Symmetric Tree
+#### Difficulty: Easy
+#### Date: 2018/1/24
+#### Solution
+```
+1. 判断root是否为空，为空则返回真
+2. 如果root不为空，则比较左子树和右子树的根的值是否相等
+3. 然后在判断左根的左子树和右根的右子树，左根的右子树和右根的左子树
+```
+#### Note
+```
+1. 用了100题的方法
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/st101.cpp)
+---
+### #102 Binary Tree Level Order Traversal
+#### Difficulty: Medium
+#### Date: 2018/1/24
+#### Solution
+```
+1. 层次遍历
+2. 保存最近一层的最后一个结点的索引
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/btlot102.cpp)
+---
+### #103 Binary Tree Zigzag Level Order Traversal
+#### Difficulty: Medium
+#### Date: 2018/1/24
+#### Solution
+```
+1. 类似于第102题
+2. 遇到偶数层则逆序输出
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/btzlot103.cpp)
+---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
 #### Date: 2017/12/19
