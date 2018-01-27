@@ -1269,6 +1269,83 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/btzlot103.cpp)
 ---
+### #104 Maximum Depth of Binary Tree
+#### Difficulty: Easy
+#### Date: 2018/1/25
+#### Solution
+```
+1. 层次遍历
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/mdobt104.cpp)
+---
+### #107 Binary Tree Level Order Traversal II
+#### Difficulty: Easy
+#### Date: 2018/1/25
+#### Solution
+```
+1. 层次遍历
+2. reverse(begin, end)逆序
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/btlotII107.cpp)
+---
+### #110 Balanced Binary Tree
+#### Difficulty: Easy
+#### Date: 2018/1/27
+#### Solution
+```
+1. 递归
+2. pair<bool, int>, 第一个判断子树是否balanced，第二个保存子树的高度
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/bbt110.cpp)
+---
+### #111 Minimum Depth of Binary Tree
+#### Difficulty: Easy
+#### Date: 2018/1/27
+#### Solution
+```
+1. 层次遍历
+2. 返回遇到的第一个叶子结点的深度
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/mdobt111.cpp)
+---
+### #112 Path Sum
+#### Difficulty: Easy
+#### Date: 2018/1/27
+#### Solution
+```
+1. 深度遍历
+2. 途中记录总的路径数
+3. 递归
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ps112.cpp)
+---
+### #113 Path Sum II
+#### Difficulty: Medium
+#### Date: 2018/1/27
+#### Solution
+```
+1. 和112题类似
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/psII113.cpp)
+---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
 #### Date: 2017/12/19
