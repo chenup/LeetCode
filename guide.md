@@ -1346,6 +1346,48 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/psII113.cpp)
 ---
+### #114 Flatten Binary Tree to Linked List
+#### Difficulty: Medium
+#### Date: 2018/1/27
+#### Solution
+```
+1. 先序遍历
+2. 递归方法
+```
+#### Note
+```
+1. 百度大法好
+2. 有递归和非递归
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/fbttll114.cpp)
+---
+### #116 Populating Next Right Pointers in Each Node
+#### Difficulty: Medium
+#### Date: 2018/1/27
+#### Solution
+```
+1. 层次遍历
+2. 每层通过next来遍历
+3. 本身是完全二叉树
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/pnrpien116.cpp)
+---
+### #117 Populating Next Right Pointers in Each Node II
+#### Difficulty: Medium
+#### Date: 2018/1/27
+#### Solution
+```
+1. 和116题类似
+3. 任意二叉树
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/pnrpienII117.cpp)
+---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
 #### Date: 2017/12/19
