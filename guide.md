@@ -1429,3 +1429,45 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/t120.cpp)
 ---
+### #121 Best Time to Buy and Sell Stock
+#### Difficulty: Easy
+#### Date: 2018/1/28
+#### Solution
+```
+1. 遍历数组
+2. 设置第一个元素为buy和sell
+3. 若当前元素小于buy，则计算sell - buy，保存最大profit，将新的元素设置为buy和sell
+4. 若当前元素大于sell，则设置新的sell
+5. 最后计算sell - buy，取最大profit
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/bttbass121.cpp)
+---
+### #122 Best Time to Buy and Sell Stock II
+#### Difficulty: Easy
+#### Date: 2018/1/28
+#### Solution
+```
+1. 把所有小到大的区间的值相加
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/bttbassII122.cpp)
+---
+### #125 Valid Palindrome
+#### Difficulty: Easy
+#### Date: 2018/1/28
+#### Solution
+```
+1. 回文判断方法
+2. 只保留数字和字母
+3. 边界问题
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/vp125.cpp)
+---
