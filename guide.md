@@ -1294,6 +1294,33 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/btlotII107.cpp)
 ---
+### #108 Convert Sorted Array to Binary Search Tree
+#### Difficulty: Easy
+#### Date: 2018/1/28
+#### Solution
+```
+1. 取有序序列的中间值作为根，左半部作为左子树，右半部作为右子树
+2. 递归
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/csatbst108.cpp)
+---
+### #109 Convert Sorted List to Binary Search Tree
+#### Difficulty: Medium
+#### Date: 2018/1/28
+#### Solution
+```
+1. 中序遍历对应有序数组
+2. 取有序序列的中间值作为根，左半部作为左子树，右半部作为右子树
+3. 递归
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/csltbst109.cpp)
+---
 ### #110 Balanced Binary Tree
 #### Difficulty: Easy
 #### Date: 2018/1/27
