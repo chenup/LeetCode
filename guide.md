@@ -1538,3 +1538,45 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/srtln129.cpp)
 ---
+### #130 Surrounded Regions
+#### Difficulty: Medium
+#### Date: 2018/1/29
+#### Solution
+```
+1. 访问外围一圈的元素，如果是O的话则递归访问它的相邻元素，并将状态设为visited
+2. 最后将未访问的O设置为X
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sr130.cpp)
+---
+### #136 Single Number
+#### Difficulty: Easy
+#### Date: 2018/1/29
+#### Solution
+```
+1. 快排
+```
+#### Note
+```
+1. 所有元素异或
+2. hash表
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sn136.cpp)
+---
+### #137 Single Number II
+#### Difficulty: Medium
+#### Date: 2018/1/29
+#### Solution
+```
+1. 快排
+```
+#### Note
+```
+1. hash表
+2. (3 * sum(set(nums)) - sum(nums)) / 2
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/snII137.cpp)
+---
+
