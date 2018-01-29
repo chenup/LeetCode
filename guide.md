@@ -1281,6 +1281,34 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/mdobt104.cpp)
 ---
+### #105 Construct Binary Tree from Preorder and Inorder Traversal
+#### Difficulty: Medium
+#### Date: 2018/1/29
+#### Solution
+```
+1. 递归
+2. 根据先序序列的首部，将中序序列划分左子树和右子树
+3. 然后根据左子树和右子树的数目划分先序序列
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/cbtfpait105.cpp)
+---
+### #106 Construct Binary Tree from Inorder and Postorder Traversal
+#### Difficulty: Medium
+#### Date: 2018/1/29
+#### Solution
+```
+1. 递归
+2. 根据后序序列的尾部，将中序序列划分左子树和右子树
+3. 然后根据左子树和右子树的数目划分后序序列
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/cbtfiapt106.cpp)
+---
 ### #107 Binary Tree Level Order Traversal II
 #### Difficulty: Easy
 #### Date: 2018/1/25
@@ -1497,4 +1525,16 @@
 ```
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/vp125.cpp)
+---
+### #129 Sum Root to Leaf Numbers
+#### Difficulty: Medium
+#### Date: 2018/1/29
+#### Solution
+```
+1. 深度遍历
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/srtln129.cpp)
 ---
