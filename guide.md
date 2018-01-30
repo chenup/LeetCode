@@ -1551,6 +1551,21 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/sr130.cpp)
 ---
+### #133 Clone Graph
+#### Difficulty: Medium
+#### Date: 2018/1/30
+#### Solution
+```
+1. 图的广度优先遍历
+2. 通过visited和clone_visited来建立原点和copy点的映射
+```
+#### Note
+```
+1. 通过Hashmap来建立映射更方便，原点为key，copy为值
+2. 也可以使用图的深度优先遍历
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/cg133.cpp)
+---
 ### #136 Single Number
 #### Difficulty: Easy
 #### Date: 2018/1/29
