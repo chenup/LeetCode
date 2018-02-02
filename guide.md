@@ -1551,6 +1551,21 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/sr130.cpp)
 ---
+### #131 Palindrome Partitioning
+#### Difficulty: Medium
+#### Date: 2018/2/2
+#### Solution
+```
+1. 递归
+2. 假设将字符串 s 分割为两段，[0,i-1], [i, n-1]，如果[0, i-1] 为回文字符串，[i, n-1]为回文字符串集合，那么 s 就是一个有效字符串。将 i 从 1 到 n-1遍历一次，求得所有满足条件的集合
+```
+#### Note
+```
+1. 子问题重复求解，可以保存之前求得的子回文字符串集合
+2. 空间换时间
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/pp131.cpp)
+---
 ### #133 Clone Graph
 #### Difficulty: Medium
 #### Date: 2018/1/30
