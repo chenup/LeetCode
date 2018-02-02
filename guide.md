@@ -1526,6 +1526,22 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/vp125.cpp)
 ---
+### #127 Word Ladder
+#### Difficulty: Medium
+#### Date: 2018/2/2
+#### Solution
+```
+1. visit数组保存当前要访问的字符串，next数组保存与visit相差一个字母的字符串
+2. 初始将beginWord放入visit
+3. 每次将字符串放入next数组后就删除原wordList里的相同字符串
+4. 当next为空则返回0
+5. 当endWord存在于next时就返回当前深度
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/wl127.cpp)
+---
 ### #129 Sum Root to Leaf Numbers
 #### Difficulty: Medium
 #### Date: 2018/1/29
@@ -1641,5 +1657,20 @@
 3. 用三向单词查找树出现超时，而且对反复求解的子问题没有记录
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/wb139.cpp)
+---
+### #141 Linked List Cycle
+#### Difficulty: Easy
+#### Date: 2018/2/2
+#### Solution
+```
+1. 通过hash表比用vector效率要高，插入和查找的效率都快，vector的底层实现是红黑树
+2. 如果访问到null则返回false
+3. 将已访问到的结点保存到hash表里，若当前访问的结点已存在hash表则返回true
+```
+#### Note
+```
+1. 若是没有额外空间消耗，则通过快指针和慢指针赛跑，如果快指针追上慢指针则代表有循环
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/llc141.cpp)
 ---
 
