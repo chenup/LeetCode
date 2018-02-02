@@ -1594,4 +1594,37 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/snII137.cpp)
 ---
+### #138 Copy List with Random Pointer
+#### Difficulty: Medium
+#### Date: 2018/2/1
+#### Solution
+```
+1. 建立哈希映射表，将node和copy node一一映射
+2. 遍历链表途中建立新的链表
+```
+#### Note
+```
+1. 提交代码时可以使用map但是不能使用hash_map
+2. map的底层实现是红黑树，hash_map的底层实现是哈希表
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/clwrp138.cpp)
+---
+### #139 Word Break
+#### Difficulty: Medium
+#### Date: 2018/2/2
+#### Solution
+```
+1. 利用unordered_set查询比三向单词查找树快，而且 unordered_set是c++自带的数据结构
+2. 假设将字符串 s 分割为两段，[0,i-1], [i, n-1]，如果[0, i-1] 为有效单词，[i, n-1]为有效单词集合，那么 s 就是一个有效字符串。将 i 从 1 到 n-1遍历一次，求得s是否是一个有效字符串
+3. 利用DP思路，即表格法，记录已计算结果，这样出现很多反复求解的子问题时在常数时间就可以解决，效率高
+4. 递归，划分子问题
+```
+#### Note
+```
+1. 百度大法好
+2. set的底层实现是红黑树，unordered_set的底层实现是hash表
+3. 用三向单词查找树出现超时，而且对反复求解的子问题没有记录
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/wb139.cpp)
+---
 
