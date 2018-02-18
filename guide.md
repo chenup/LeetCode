@@ -1673,4 +1673,37 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/llc141.cpp)
 ---
+### #142 Linked List Cycle II
+#### Difficulty: Medium
+#### Date: 2018/2/18
+#### Solution
+```
+1. 通过hash表比用vector效率要高，插入和查找的效率都快，vector的底层实现是红黑树
+2. 如果访问到null则返回null
+3. 将已访问到的结点保存到hash表里，若当前访问的结点已存在hash表则返回当前结点
+```
+#### Note
+```
+1. 百度大法好
+2. 设置一个快指针fp和一个慢指针sp，两个指针起始同时指向head节点，其中快指针每次走两步，慢指针每次走一步 
+3. 如果链表中存在环，那么fp和sp一定会相遇，当两个指针相遇的时候，我们设相遇点为c，此时fp和sp都指向了c，接下来令fp继续指向c结点，sp指向链表头结点head，此时最大的不同是fp的步数变成为每次走一步，令fp和sp同时走，每次一步，那么它们再次相遇的时候即为环的入口结点
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/llcII142.cpp)
+---
+### #143 Reorder List
+#### Difficulty: Medium
+#### Date: 2018/2/18
+#### Solution
+```
+1. 通过快指针和慢指针将链表一分为二
+2. 快指针每次加2，慢指针每次加1
+3. 将后半部分进行reverse操作
+4. 合并两部分
+```
+#### Note
+```
+1. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rl143.cpp)
+---
 
