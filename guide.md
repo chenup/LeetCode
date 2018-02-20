@@ -1597,6 +1597,25 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/cg133.cpp)
 ---
+### #134 Gas Station
+#### Difficulty: Medium
+#### Date: 2018/2/20
+#### Solution
+```
+1. 先计算gas[i] - cost[i]
+2. 从0到size - 1遍历数组，将所有值相加得total
+3. 初始时sum为0，如果sum小于0则从下一个点开始计算，并记录开始点，sum归0，否则sum加上当前值
+3. 最后判断total是否小于0，若小于0则返回-1，否则返回记录点
+```
+#### Note
+```
+1. 百度大法好
+2. 想的太复杂
+3. 后面不行前面肯定不行，所以不需要回溯
+4. 当到达末尾时sum大于0，并且total大于0就说明可以继续走到记录点，因为就算记录点之前的值为负，sum也可以抵消它
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/gs134.cpp)
+---
 ### #136 Single Number
 #### Difficulty: Easy
 #### Date: 2018/1/29
@@ -1744,4 +1763,38 @@
 ```
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/isl147.cpp)
+---
+### #148 Sort List
+#### Difficulty: Medium
+#### Date: 2018/2/20
+#### Solution
+```
+1. 符合 O(nlgn)要求只有快速排序，归并排序，堆排序
+2. 而根据单链表的特点，最适于用归并排序
+3. 快排也行
+4. 递归
+5. 归并排序是分治法，取中点，划分左集合和右集合，然后合并
+6. 快排取一个key，然后划分小于和大于等于它的
+```
+#### Note
+```
+1. 百度大法好
+2. 快排没通过，但是本机测试正确
+3. 归并排序通过了
+4. 归并排序的实现更简单
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sl148.cpp)
+---
+### #150 Evaluate Reverse Polish Notation
+#### Difficulty: Medium
+#### Date: 2018/2/20
+#### Solution
+```
+1. 后缀表达式用栈来实现
+```
+#### Note
+```
+1. 有负数和超过个位的整数
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/erpn150.cpp)
 ---
