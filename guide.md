@@ -1706,4 +1706,42 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/rl143.cpp)
 ---
-
+### #144 Binary Tree Preorder Traversal
+#### Difficulty: Medium
+#### Date: 2018/2/19
+#### Solution
+```
+1. 通过栈实现迭代方式
+2. 先序: 先根再左再右
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/btpt144.cpp)
+---
+### #145 Binary Tree Postorder Traversal
+#### Difficulty: Hard
+#### Date: 2018/2/19
+#### Solution
+```
+1. 通过栈实现迭代方式
+2. 通过visited来判断结点有没有之前被访问过
+3. 后序: 先左再右再根
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/btpt145.cpp)
+---
+### #147 Insertion Sort List
+#### Difficulty: Medium
+#### Date: 2018/2/19
+#### Solution
+```
+1. 插入排序
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/isl147.cpp)
+---
