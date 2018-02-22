@@ -1887,3 +1887,83 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/iotll160.cpp)
 ---
+### #162 Find Peak Element
+#### Difficulty: Medium
+#### Date: 2018/2/22
+#### Solution
+```
+1. 遍历数组，如果当前值小于下一个值，则返回当前值的索引
+2. 否则返回最后一个值的索引
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/fpe162.cpp)
+---
+### #165 Compare Version Numbers
+#### Difficulty: Medium
+#### Date: 2018/2/22
+#### Solution
+```
+1. 根据"."来分隔字符串来得到每个数字
+2. 比较两个字符串对应的数字
+```
+#### Note
+```
+1. 1和1.0返回0
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/cvn165.cpp)
+---
+### #167 Two Sum II - Input array is sorted
+#### Difficulty: Easy
+#### Date: 2018/2/22
+#### Solution
+```
+1. k Sum问题
+2. 夹逼
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/tsII167.cpp)
+---
+### #168 Excel Sheet Column Title
+#### Difficulty: Easy
+#### Date: 2018/2/22
+#### Solution
+```
+1. 用A~Z表示26进制数
+```
+#### Note
+```
+1. 每次取模运算时都要把被取模数自减1
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/esct168.cpp)
+---
+### #171 Excel Sheet Column Number
+#### Difficulty: Easy
+#### Date: 2018/2/22
+#### Solution
+```
+1. 用A~Z表示26进制数
+2. 26进制转换为10进制
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/escn171.cpp)
+---
+### #172 Factorial Trailing Zeroes
+#### Difficulty: Easy
+#### Date: 2018/2/22
+#### Solution
+```
+1. 10由2和5这两个素数相乘得来
+2. 5数目肯定比2的数目多，所以计算5的数目就行
+3. 通过p = n / pow(5, i), 计算p > 0的总和
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ftz172.cpp)
+---
