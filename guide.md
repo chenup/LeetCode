@@ -1798,3 +1798,92 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/erpn150.cpp)
 ---
+### #151 Reverse Words in a String
+#### Difficulty: Medium
+#### Date: 2018/2/21
+#### Solution
+```
+1. 去除单词间重复的空格，注意首尾空格
+2. 可以先将空格去除和单词翻转，最后将整个字符串翻转
+3. 也可以通过输入流来将后一个字符串插入到前一个字符串
+```
+#### Note
+```
+1. 百度大法好
+2. 简单问题想复杂，事先应该先设计再编码，太急了
+3. 没有活用c++的知识
+4. reserve和resize函数
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rwias151.cpp)
+---
+### #152 Maximum Product Subarray
+#### Difficulty: Medium
+#### Date: 2018/2/22
+#### Solution
+```
+1. 遍历数组
+2. 每遇到一个0值都是一个重新计算的过程，但是要保留之前的最大值
+2. 若值为正，则乘到之前的乘积上，并更新最大值
+3. 若值为负，若之前的负数累计数为0, 则记录之前的乘积和该负数，更新累计数；若累计数为偶数，则用当前乘积乘上该负数，除掉第一个负数和它之前的乘积，更新乘积和累计数和最大值；若累计为奇数，则用当前乘积乘上该负数，并更新乘积和最大值和累计数
+4. 返回最大值
+```
+#### Note
+``` 
+1. 若数组数目为1，则直接返回该数
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/mps152.cpp)
+---
+### #153 Find Minimum in Rotated Sorted Array
+#### Difficulty: Medium
+#### Date: 2018/2/21
+#### Solution
+```
+1. 遍历数组， 比较当前数和下一个数，若当前数大于下一个数，那最小值就是下一个数，结束
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/fmirsa153.cpp)
+---
+### #154 Find Minimum in Rotated Sorted Array II
+#### Difficulty: Hard
+#### Date: 2018/2/21
+#### Solution
+```
+1. 遍历数组， 比较当前数和下一个数，若当前数大于下一个数，那最小值就是下一个数，结束
+2. 同153题，有重复值不影响
+```
+#### Note
+``` 
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/fmirsaII154.cpp)
+---
+### #155 Min Stack
+#### Difficulty: Easy
+#### Date: 2018/2/22
+#### Solution
+```
+1. 用一个最小栈来保存数值栈的最小值的索引，最小栈的top表示的是数值栈的最小值
+2. 当push时，先取出最小栈的栈顶值作为索引，找到数值栈的最小值，若该值比push的值还小的话，则将新的数值栈的top push到最小栈
+3. 当pop时，若数值栈的最小值pop了，则最小栈也pop一个
+```
+#### Note
+``` 
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ms155.cpp)
+--- 
+### #160 Intersection of Two Linked Lists
+#### Difficulty: Easy
+#### Date: 2018/2/21
+#### Solution
+```
+1. 先计算链表A和B的长度，长的那个从与短的相同长度的结点开始，比较A和B的每个结点
+2. 若有相同结点则返回该结点，否则返回NULL
+```
+#### Note
+```
+1. 百度大法好
+2. 也可以将一个链表首尾相连后通过快慢指针来计算连接点
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/iotll160.cpp)
+---
