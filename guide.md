@@ -1914,6 +1914,24 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/cvn165.cpp)
 ---
+### #166 Fraction to Recurring Decimal
+#### Difficulty: Medium
+#### Date: 2018/2/24
+#### Solution
+```
+1. 注意界限问题
+2. 将int转化为long long int
+3. 用hash表来记录，key是当前余数，value是当前结果字符串的长度，如果余数已经存在于hash表里则在之前的相同余数和当前余数间插入"()",并返回
+4. 如果余数为0，则直接返回
+```
+#### Note
+```
+1. 百度大法好
+2. abs问题，返回值和参数要一致，否则会出错
+3. string.insert来插入"("、")"
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ftrd166.cpp)
+---
 ### #167 Two Sum II - Input array is sorted
 #### Difficulty: Easy
 #### Date: 2018/2/22
@@ -1939,6 +1957,20 @@
 1. 每次取模运算时都要把被取模数自减1
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/esct168.cpp)
+---
+### #169 Majority Element
+#### Difficulty: Easy
+#### Date: 2018/2/23
+#### Solution
+```
+1. 用hash表来count，超过n/2则返回
+```
+#### Note
+```
+1. 可以排序后来count
+2. 通过Boyer-Moore投票算法，即选出的候选人为1，非候选人为-1，当count为0时，选择新的候选人，最后返回候选人，这个也就是互相抵消后得到结果
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/me169.cpp)
 ---
 ### #171 Excel Sheet Column Number
 #### Difficulty: Easy
@@ -1967,3 +1999,132 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/ftz172.cpp)
 ---
+### #173 Binary Search Tree Iterator
+#### Difficulty: Medium
+#### Date: 2018/2/23
+#### Solution
+```
+1. 中序遍历，将结果保存在队列里
+2. 每次next则依次从队列取数
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/bsti173.cpp)
+---
+### #179 Largest Number
+#### Difficulty: Medium
+#### Date: 2018/2/23
+#### Solution
+```
+1. 将int装换成string，然后快排，最后拼凑
+2. sort的比较函数实现采用了递归，如果字符串a是字符串b的首部子串，那么递归比较b剩下部分与a的大小关系
+```
+#### Note
+```
+1. sort的比较函数必须写在类外部（全局区域）或声明为静态函数
+2. 还有更好的比较方法，用 a + b 与 b + a比较，代表了a和b的大小关系，而且连接后长度相等
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/bsti173.cpp)
+---
+### #187 Repeated DNA Sequences
+#### Difficulty: Medium
+#### Date: 2018/2/23
+#### Solution
+```
+1. 将A、C、G、T用2个比特压缩，用0~3表示
+2. 遍历字符串中的每个字符，通过比特的移位来计算下一个子字符串
+3. 用hash表来记录子字符串的次数
+```
+#### Note
+```
+1. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rds187.cpp)
+---
+### #189 Rotate Array
+#### Difficulty: Easy
+#### Date: 2018/2/24
+#### Solution
+```
+1. 判断往前插和往后插的值的数目，选择步骤最少的那种
+2. 通过push_back、pop_back和erase来操作
+3. k要取模数组的长度后更新
+```
+#### Note
+```
+1. 也可以通过旋转交换来达到目标
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ra189.cpp)
+---
+### #190 Reverse Bits
+#### Difficulty: Easy
+#### Date: 2018/2/24
+#### Solution
+```
+1. 移位操作
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rb190.cpp)
+---
+### #191 Number of 1 Bits
+#### Difficulty: Easy
+#### Date: 2018/2/24
+#### Solution
+```
+1. 移位操作
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/no1b191.cpp)
+---
+### #198 House Robber
+#### Difficulty: Easy
+#### Date: 2018/2/24
+#### Solution
+```
+1. 动态规划
+2. 递归时用dp数组来保存，否则会超时
+3. 可以通过迭代来计算
+4. 如果选择了抢劫上一个屋子，那么就不能抢劫当前的屋子，所以最大收益就是抢劫上一个屋子的收益，f(n - 1)
+5. 如果选择抢劫当前屋子，就不能抢劫上一个屋子，所以最大收益是到上一个屋子的上一个屋子为止的最大收益，加上当前屋子里有的钱，f(n - 2) + num[n]
+```
+#### Note
+```
+1. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/hr198.cpp)
+---
+### #199 Binary Tree Right Side View
+#### Difficulty: Medium
+#### Date: 2018/2/24
+#### Solution
+```
+1. 层次遍历
+2. 返回每一层的最后一个数
+```
+#### Note
+```
+1. 使用STL中queue数据结构实现更加简单
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/btrsv199.cpp)
+---
+### #200 Number of Islands
+#### Difficulty: Medium
+#### Date: 2018/2/24
+#### Solution
+```
+1. 递归
+2. 深度优先遍历
+3. visited表
+```
+#### Note
+```
+1. 也可以使用层次遍历
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/nof200.cpp)
+---
+
