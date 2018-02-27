@@ -2127,4 +2127,90 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/nof200.cpp)
 ---
+### #201 Bitwise AND of Numbers Range
+#### Difficulty: Medium
+#### Date: 2018/2/27
+#### Solution
+```
+1. 将m和n异或后得tmp
+2. 获取tmp的最大有效位top
+3. 计算mask: (1 << (top + 1)) - 1
+4. 结果为 m & ~mask
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/baonr201.cpp)
+---
+### #202 Happy Number
+#### Difficulty: Easy
+#### Date: 2018/2/27
+#### Solution
+```
+1. 按照題目要求走
+2. 用set保存之前的sum，如果已经存在则返回false
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/hn202.cpp)
+---
+### #203 Remove Linked List Elements
+#### Difficulty: Easy
+#### Date: 2018/2/27
+#### Solution
+```
+1. 链表删除元素操作
+```
+#### Note
+```
+1. 设置一个头结点，简化当要删除链表首部结点的操作
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rlle203.cpp)
+---
+### #204 Count Primes
+#### Difficulty: Easy
+#### Date: 2018/2/27
+#### Solution
+```
+1. 埃拉托斯特尼筛法（素数筛）
+2. 给出要筛数值的范围n，找出sqrt{n}以内的素数。 先用2去筛，即把2留下，把2的倍数剔除掉；再用下一个素数，也就是3筛，把3留下，把3的倍数剔除掉；接下去用下一个素数5筛，把5留下，把5的倍数剔除掉；不断重复下去......
+```
+#### Note
+```
+1. 百度大法好
+2. 用vector比set效率高
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/cp204.cpp)
+---
+### #205 Isomorphic Strings
+#### Difficulty: Easy
+#### Date: 2018/2/27
+#### Solution
+```
+1. 用map建立字符串s和t的映射,若s中两个相同的字符映射的字符不同则返回false
+2. 用set保存已经访问过的t的字符，如果map未建立的映射的value已经出现在set中则返回false
+```
+#### Note
+```
+1. 更简单的方法，用两个数组保存当前访问的字符在上一次出现的索引，若不相等则返回false，否则更新当前字符的索引
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/is205.cpp)
+---
+### #206 Reverse Linked List
+#### Difficulty: Easy
+#### Date: 2018/2/27
+#### Solution
+```
+1. 迭代方法： 1->2->3->4  =>  3->4 and 2->1
+2. 递归方法： 1->2->3->4  =>  1->2<-3<-4
+```
+#### Note
+```
+1. 百度大法好
+2. 想复杂了，不需要先遍历到尾部，时间复杂度是O(n)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/rll206.cpp)
+---
+
 
