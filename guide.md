@@ -2212,5 +2212,34 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/rll206.cpp)
 ---
+### #207 Course Schedule
+#### Difficulty: Medium
+#### Date: 2018/2/28
+#### Solution
+```
+1. 图判断是否有回路
+2. 深度优先遍历
+3. 通过marked来记录访问过的结点，onStack来判断当前路径有回路
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/cs207.cpp)
+---
+### #208 Implement Trie (Prefix Tree)
+#### Difficulty: Medium
+#### Date: 2018/2/28
+#### Solution
+```
+1. 三向单词查找树的操作
+```
+#### Note
+```
+1. 参考书本上的，用的递归
+2. 自己实现的是迭代的，出错了
+3. 也可以用R向单词查找树
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/it208.cpp)
+---
 
 
