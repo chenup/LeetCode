@@ -2241,5 +2241,53 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/it208.cpp)
 ---
+### #209 Minimum Size Subarray Sum
+#### Difficulty: Medium
+#### Date: 2018/3/1
+#### Solution
+```
+1. 用两个指针分别指向子数组的首尾，计算长度，然后判断是否大于等于s并且比当前最小值小，如果是的话更新当前最小值
+2. 初始时，两个指针都指向数组首部，之后尾指针向后移动，直到和大于等于s，之后移动首指针直到和小于s，以此往复
+```
+#### Note
+```
+1. 百度大法好
+2. 和第53题类似
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/msss209.cpp)
+---
+### #210 Course Schedule II
+#### Difficulty: Medium
+#### Date: 2018/3/1
+#### Solution
+```
+1. 拓扑排序
+2. 改进第207题判断图是否有环的问题
+3. 后序输出
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/csII210.cpp)
+---
+### #211 Add and Search Word - Data structure design
+#### Difficulty: Medium
+#### Date: 2018/3/1
+#### Solution
+```
+1. R向单词查找树
+2. 如果遇到'.'则查找所有子树
+3. 只要有一个返回true，整个search函数就返回true
+4. DFS
+```
+#### Note
+```
+1. 百度大法好
+2. 自己改的三向单词查找树最后几个测试集没通过
+3. R向单词查找树实现更简单
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/aasw211.cpp)
+---
+
 
 

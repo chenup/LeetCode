@@ -1,3 +1,4 @@
+/*
 struct TrieNode
 {
     TrieNode* pre;
@@ -7,7 +8,7 @@ struct TrieNode
     int idx;
     TrieNode(char c, int n) : pre(NULL), middle(NULL), next(NULL), letter(c), idx(n) {}
 };
-
+*/
 
 /*
 class Trie {
