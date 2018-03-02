@@ -4,7 +4,7 @@
 
 using namespace std;
 
-
+/*
 class Solution {
 public:
     bool exist(vector<vector<char>>& board, string word) {
@@ -165,7 +165,44 @@ public:
     }
 
 };
+*/
+class Solution {
+public:
+    bool exist(vector<vector<char>>& board, string word) {
+        if (board.empty() || word.empty())
+            return false;
+        int rows = board.size(), cols = board[0].size();
+        int len = 0;
+        bool* visit = new bool[rows*cols];
+        memset(visit, 0, rows*cols);
+        for (int row = 0; row < rows;++row) {
+            for (int col = 0; col < cols;++col) {
+                if (hasWord(board, rows, cols, row, col, word, len, visit))
+                    return true;
+            }
+        }
+        delete[] visit;
+        return false;
+    }
 
+    bool hasWord(vector<vector<char>>& board, int rows, int cols, int row, int col, string word, int& len, bool* visit) {
+        if (word[len] == '\0')
+            return true;
+        bool hasword = false;
+        if ((row >= 0) && (row < rows) && (col >= 0) && (col < cols) && (board[row][col] == word[len]) && !visit[row*cols + col])
+        {
+            ++len;
+            visit[row*cols + col] = true;
+            hasword = hasWord(board, rows, cols, row - 1, col, word, len, visit) || hasWord(board, rows, cols, row, col + 1, word, len, visit) ||
+                hasWord(board, rows, cols, row + 1, col, word, len, visit) || hasWord(board, rows, cols, row, col - 1, word, len, visit);
+            if (!hasword) {
+                --len;
+                visit[row*cols + col] = false;
+            }
+        }
+        return hasword;
+    }
+};
 int main()
 {
 	vector<vector<char>> board = {{"a", "b"}, {"c", "d"}};

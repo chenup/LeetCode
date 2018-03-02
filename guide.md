@@ -2288,6 +2288,48 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/aasw211.cpp)
 ---
+### #212 Word Search II
+#### Difficulty: Hard
+#### Date: 2018/3/2
+#### Solution
+```
+1. 如果还按照DFS回溯的方法，逐个检查每个word是否在board里，显然效率是比较低的
+2. 我们可以利用Trie数据结构，也就是前缀树。然后dfs时，如果当前形成的单词不在Trie里，就没必要继续dfs下去了
+3. 如果当前字符串在trie里，就说明board可以形成这个word
+```
+#### Note
+```
+1. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/wsII212.cpp)
+---
+### #213 House Robber II
+#### Difficulty: Medium
+#### Date: 2018/3/2
+#### Solution
+```
+1. 动态规划
+2. 和198题类似
+3. 分别去掉第一家和最后一家计算，最后取两个的最大值
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/hrII213.cpp)
+---
+### #215 Kth Largest Element in an Array
+#### Difficulty: Medium
+#### Date: 2018/3/2
+#### Solution
+```
+1. 利用快排的思想获取第k大的数
+```
+#### Note
+```
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/kleiaa215.cpp)
+---
+
 
 
 
