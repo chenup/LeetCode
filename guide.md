@@ -2329,7 +2329,64 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/kleiaa215.cpp)
 ---
-
-
-
-
+### #216 Combination Sum III
+#### Difficulty: Medium
+#### Date: 2018/3/3
+#### Solution
+```
+1. 按照题目思路采用递归
+```
+#### Note
+```
+1. 若i < n，则后面更大的i不需要计算了
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/CSIII216.cpp)
+---
+### #217 Contains Duplicate
+#### Difficulty: Easy
+#### Date: 2018/3/3
+#### Solution
+```
+1. 用hash表记录
+```
+#### Note
+```
+1. 也可以用排序方法
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/cd217.cpp)
+---
+### #219 Contains Duplicate II
+#### Difficulty: Easy
+#### Date: 2018/3/3
+#### Solution
+```
+1. 用hash表记录
+2. 比较相同的两个key的索引值是不是小于等于k，若大于则更新value
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/cdII219.cpp)
+---
+### #220 Contains Duplicate III
+#### Difficulty: Medium
+#### Date: 2018/3/3
+#### Solution
+```
+1. 用hash表记录
+2. 通过k来确定滑动窗口
+3. 遍历窗口内的每个元素，取比nums[i] - t最接近的上界，比较|tmp - nums[i]| <= t, 返回true
+4. 否则移动滑动窗口
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/cdIII220.cpp)
+---
