@@ -2450,4 +2450,77 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/ra223.cpp)
 ---
+### #225 Implement Stack using Queues
+#### Difficulty: Easy
+#### Date: 2018/3/5
+#### Solution
+```
+1. 用两个队列实现栈
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(没做)
+4. 对STL的queue操作不熟悉
+5. 还有通过一个queue来实现的解法，通过把前面的数转移到新插入的后面来实现逆序，这样新插入的数就到了queue的首部
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/isuq225.cpp)
+---
+### #226 Invert Binary Tree
+#### Difficulty: Easy
+#### Date: 2018/3/5
+#### Solution
+```
+1. 左子树和右子树替换
+2. 递归
+3. 也可以用广度优先遍历来做
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/ibt226.cpp)
+---
+### #227 Basic Calculator II
+#### Difficulty: Medium
+#### Date: 2018/3/5
+#### Solution
+```
+1. 用栈来保存操作数
+2. 当遇到操作符时，将栈里面的操作数push出来，用之前的操作符计算
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(没做)
+4. 百度大法好
+5. 把减法转化成加法
+6. 计算式之前添加 ( 0 + )，统一计算步骤
+7. 最后只要把所有加法相加就行
+8. 只用一个栈来保存操作符即可
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/bcII227.cpp)
+---
+### #228 Summary Ranges
+#### Difficulty: Medium
+#### Date: 2018/3/5
+#### Solution
+```
+1. 遍历一遍数组即可，每次检查下一个数是不是递增的，如果是，则继续往下遍历，如果不是了，我们还要判断此时是一个数还是一个序列，一个数直接存入结果，序列的话要存入首尾数字和箭头“->"
+2. 需要两个变量i和j，其中i是连续序列起始数字的位置，j是连续数列的长度，当j为1时，说明只有一个数字，若大于1，则是一个连续序列
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(没做)
+4. 百度大法好
+5. 原来的思路是用二分法，但是mid的连接问题没法解决
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/sr228.cpp)
+---
 
