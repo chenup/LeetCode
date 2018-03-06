@@ -13,7 +13,7 @@
 1. 注意[3, 2, 3, 1]的情况
 2. 用Hash更好
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ts1.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ts1.cpp)
 ---
 ### #2 Add Two Numbers
 #### Difficulty: Medium
@@ -28,7 +28,7 @@
 1. 只能用现有的链表元素拼接不然用局部变量会因为释放而出错
 2. 能不计算的地方就不计算不然会超时
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/atn2.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/atn2.cpp)
 ---
 ### #3 Longest Substring Without Repeating Characters
 #### Difficulty: Medium
@@ -42,7 +42,7 @@
 ```
 1. 重复字符不一定连续，重复字符中间的字符不重复 
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/lswrc3.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/lswrc3.cpp)
 ---
 ### #4 Median of Two Sorted Arrays
 #### Difficulty: Hard
@@ -59,7 +59,7 @@
 ```
 1. 百度的答案，没有考虑到k~~
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/motsa4.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/motsa4.cpp)
 ---
 ### #5 Longest Palindromic Substring
 #### Difficulty: Medium
@@ -72,7 +72,7 @@
 ```
 1. 边界问题
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/lps5.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/lps5.cpp)
 ---
 ### #6 ZigZag Conversion
 #### Difficulty: Medium
@@ -85,7 +85,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/zzc6.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/zzc6.cpp)
 ---
 ### #7 Reverse Integer
 #### Difficulty: Easy
@@ -101,7 +101,7 @@
 1. 注意负数前面的‘-’
 2. 边界问题，不能超过32位
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ri7.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ri7.cpp)
 ---
 ### #8 String to Integer (atoi)
 #### Difficulty: Medium
@@ -118,7 +118,7 @@
 2. 边界问题
 3. “+”和“-”的判断，有些时候正整数没有“+”
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sti8.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sti8.cpp)
 ---
 ### #9 Palindrome Number
 #### Difficulty: Easy
@@ -131,7 +131,7 @@
 ```
 1. 负数直接false
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/pn9.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/pn9.cpp)
 ---
 ### #10 Regular Expression Matching
 #### Difficulty: Hard
@@ -148,7 +148,7 @@
 ```
 1. 这只是一种简化的正则表达式匹配
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rem10.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rem10.cpp)
 ---
 ### #11 Container With Most Water
 #### Difficulty: Medium
@@ -162,7 +162,7 @@
 ```
 1. 暴力求解没有作用，百度大法的
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cwmw11.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cwmw11.cpp)
 ---
 ### #12 Integer to Roman
 #### Difficulty: Medium
@@ -184,7 +184,7 @@
 ```
 1. 百度大法好
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/itr12.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/itr12.cpp)
 ---
 ### #13 Roman to Integer 
 #### Difficulty: Easy
@@ -200,7 +200,7 @@
 ```
 1. 对map的使用不熟
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rti13.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rti13.cpp)
 ---
 ### #14 Longest Common Prefix
 #### Difficulty: Easy
@@ -213,7 +213,7 @@
 ```
 1. 注意当没有字符串存在的情况下应该返回""
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/lcp14.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/lcp14.cpp)
 ---
 ### #15 3Sum
 #### Difficulty: Medium
@@ -234,7 +234,7 @@
 3. 还可以使用hashtable来解决，将两个数的组合值作为key，索引对作为value
 4. 去重问题
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/3s15.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/3s15.cpp)
 ---
 ### #16 3Sum Closest
 #### Difficulty: Medium
@@ -252,7 +252,7 @@
 3. 两个负数相加更小
 4. 两个正数相加更大
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/3sc16.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/3sc16.cpp)
 ---
 ### #17 Letter Combinations of a Phone Number
 #### Difficulty: Medium
@@ -268,7 +268,7 @@
 1. 对vector和string的操作不熟悉
 2. 对类的概念不熟悉
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/lcoapn17.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/lcoapn17.cpp)
 ---
 ### #18 4Sum
 #### Difficulty: Medium
@@ -285,7 +285,7 @@
 ```
 1. K Sum问题
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/4s18.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/4s18.cpp)
 ---
 ### #19 Remove Nth Node From End of List
 #### Difficulty: Medium
@@ -300,7 +300,7 @@
 ```
 1. 从尾部开始删除
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/4s18.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/4s18.cpp)
 ---
 ### #20 Valid Parentheses
 #### Difficulty: Easy
@@ -316,7 +316,7 @@
 1. 开辟一个栈即可
 
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/vp20.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/vp20.cpp)
 ---
 ### #21 Merge Two Sorted Lists
 #### Difficulty: Easy
@@ -332,7 +332,7 @@
 1. 不需要另外开辟空间来存链表
 
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/mtsl21.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mtsl21.cpp)
 ---
 ### #22 Generate Parentheses
 #### Difficulty: Medium
@@ -346,7 +346,7 @@
 ```
 1. 对树的递归结构的理解不足
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/gp22.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/gp22.cpp)
 ---
 ### #23 Merge k Sorted Lists
 #### Difficulty: Hard
@@ -362,7 +362,7 @@
 ```
 1. 2 sorted是k sorted的一种特例
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/mksl23.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mksl23.cpp)
 ---
 ### #24 Swap Nodes in Pairs
 #### Difficulty: Medium
@@ -377,7 +377,7 @@
 ```
 1. 偶数个结点和奇数个结点的情况，奇数个最后一个不变
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/snip24.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/snip24.cpp)
 ---
 ### #25 Reverse Nodes in k-Group
 #### Difficulty: Hard
@@ -390,7 +390,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/mksl23.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mksl23.cpp)
 ---
 ### #26 Remove Duplicates from Sorted Array
 #### Difficulty: Easy
@@ -404,7 +404,7 @@
 1. 对vector的操作不熟悉，vector.erase(p)删除迭代器p所指定的元素，返回一个指向被删元素之后元素的迭代器
 2. 对题目的理解不全面
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rdfsa26.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rdfsa26.cpp)
 ---
 ### #27 Remove Element
 #### Difficulty: Easy
@@ -416,7 +416,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/re27.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/re27.cpp)
 ---
 ### #28 Implement strStr()
 #### Difficulty: Easy
@@ -431,7 +431,7 @@
 ```
 1. KMP算法没通过，暴力求解算法通过了
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/is28.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/is28.cpp)
 ---
 ### #29 Divide Two Integers
 #### Difficulty: Medium
@@ -446,7 +446,7 @@
 ```
 1. 百度大法好
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/dti29.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/dti29.cpp)
 ---
 ### #31 Next Permutation
 #### Difficulty: Medium
@@ -461,7 +461,7 @@
 ```
 1. 子队列排序中首尾替换时的索引容易出错
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/np31.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/np31.cpp)
 ---
 ### #32 Longest Valid Parentheses
 #### Difficulty: Hard
@@ -478,7 +478,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/lvp32.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/lvp32.cpp)
 ---
 ### #33 Search in Rotated Sorted Array
 #### Difficulty: Medium
@@ -490,7 +490,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sirsa33.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sirsa33.cpp)
 ---
 ### #34 Search for a Range
 #### Difficulty: Medium
@@ -503,7 +503,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sfar34.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sfar34.cpp)
 ---
 ### #35 Search Insert Position
 #### Difficulty: Easy
@@ -515,7 +515,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sip35.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sip35.cpp)
 ---
 ### #36 Valid Sudoku
 #### Difficulty: Medium
@@ -534,7 +534,7 @@
 2. 百度大法
 3. vector<vector<char>> 出错
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/vs36.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/vs36.cpp)
 ---
 ### #38 Count and Say
 #### Difficulty: Easy
@@ -549,7 +549,7 @@
 ```
 1. 百度大法
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cas38.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cas38.cpp)
 ---
 ### #39 Combination Sum
 #### Difficulty: Medium
@@ -564,7 +564,7 @@
 ```
 1. 注意别逆向输出
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cs39.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cs39.cpp)
 ---
 ### #40 Combination Sum II
 #### Difficulty: Medium
@@ -580,7 +580,7 @@
 1. 二分法使用有误
 2. 递归过程中return换成continue
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/csII40.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/csII40.cpp)
 ---
 ### #43 Multiply Strings
 #### Difficulty: Medium
@@ -594,7 +594,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ms43.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ms43.cpp)
 ---
 ### #46 Permutations
 #### Difficulty: Medium
@@ -609,7 +609,7 @@
 ```
 1. 对于vector的迭代指针操作、vector的插入和删除操作不是很熟悉
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/p46.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/p46.cpp)
 ---
 ### #47 Permutations II
 #### Difficulty: Medium
@@ -624,7 +624,7 @@
 ```
 1. 百度大法
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/pII47.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/pII47.cpp)
 ---
 ### #48 Rotate Image
 #### Difficulty: Medium
@@ -638,7 +638,7 @@
 ```
 1. 对插入和删除操作不熟悉
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ri48.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ri48.cpp)
 ---
 ### #49 Group Anagrams
 #### Difficulty: Medium
@@ -659,7 +659,7 @@
 6. 对于c++的使用不熟，很简单的程序写了很久
 7. 案例给的不清楚
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ga49.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ga49.cpp)
 ---
 ### #50 Pow(x, n)
 #### Difficulty: Medium
@@ -675,7 +675,7 @@
 ```
 1. x可能为0，n可能为负，n也可能为0
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/p50.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/p50.cpp)
 ---
 ### #53 Maximum Subarray
 #### Difficulty: Easy
@@ -689,7 +689,7 @@
 ```
 1. 不知道这是不是动态规划的题，通过划分子问题的方法来求解？
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ms53.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ms53.cpp)
 ---
 ### #54 Spiral Matrix
 #### Difficulty: Medium
@@ -702,7 +702,7 @@
 ```
 1. 注意边界
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sm54.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sm54.cpp)
 ---
 ### #55 Jump Game
 #### Difficulty: Medium
@@ -717,7 +717,7 @@
 1. 试错了很多次
 2. leetcode上提供了4种解法
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/jg55.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/jg55.cpp)
 ---
 ### #56 Merge Intervals
 #### Difficulty: Medium
@@ -734,7 +734,7 @@
 1. leetcode上提供了解法
 2. 对sort(s,e,cmp)的cmp的用法不熟
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/mi56.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mi56.cpp)
 ---
 ### #58 Length of Last Word
 #### Difficulty: Easy
@@ -747,7 +747,7 @@
 ```
 1. 最后一个单词后面可能有许多空格，这个要略过
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/lolw58.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/lolw58.cpp)
 ---
 ### #59 Spiral Matrix II
 #### Difficulty: Medium
@@ -759,7 +759,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/smII59.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/smII59.cpp)
 ---
 ### #60 Permutation Sequence
 #### Difficulty: Medium
@@ -775,7 +775,7 @@
 ```
 1. k应该从0开始计算，而不是1，否则/和%运算会出错
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ps60.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ps60.cpp)
 ---
 ### #61 Rotate List
 #### Difficulty: Medium
@@ -791,7 +791,7 @@
 ```
 1. 左移和右移混淆
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rl61.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rl61.cpp)
 ---
 ### #62 Unique Paths
 #### Difficulty: Medium
@@ -807,7 +807,7 @@
 ```
 1. 对子问题的划分有问题
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/up62.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/up62.cpp)
 ---
 ### #63 Unique Paths II
 #### Difficulty: Medium
@@ -820,7 +820,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/up63.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/up63.cpp)
 ---
 ### #64 Minimum Path Sum
 #### Difficulty: Medium
@@ -835,7 +835,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/mps64.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mps64.cpp)
 ---
 ### #66 Plus One
 #### Difficulty: Medium
@@ -849,7 +849,7 @@
 1. 百度大法好
 2. 其实很简单
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/po66.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/po66.cpp)
 ---
 ### #67 Add Binary
 #### Difficulty: Easy
@@ -864,7 +864,7 @@
 1. 0x10 和0x02混淆
 
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ab67.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ab67.cpp)
 ---
 ### #69 Sqrt(x)
 #### Difficulty: Easy
@@ -883,7 +883,7 @@
 4. f(y) = y^2 - x
 5. f(y) = 0
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/s69.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/s69.cpp)
 ---
 ### #70 Climbing Stairs
 #### Difficulty: Easy
@@ -897,7 +897,7 @@
 ```
 1. f(0)=0, f(1)=1, f(2)=2
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cs70.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cs70.cpp)
 ---
 ### #71 Simplify Path
 #### Difficulty: Medium
@@ -912,7 +912,7 @@
 ```
 1. 需要记规则
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sp71.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sp71.cpp)
 ---
 ### #73 Set Matrix Zeroes
 #### Difficulty: Medium
@@ -926,7 +926,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/smz73.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/smz73.cpp)
 ---
 ### #74 Search a 2D Matrix
 #### Difficulty: Medium
@@ -942,7 +942,7 @@
 ```
 1. 注意矩阵为空的情况
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sa2m74.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sa2m74.cpp)
 ---
 ### #75 Sort Colors
 #### Difficulty: Medium
@@ -954,7 +954,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sc75.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sc75.cpp)
 ---
 ### #77 Combinations
 #### Difficulty: Medium
@@ -968,7 +968,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/c77.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/c77.cpp)
 ---
 ### #78 Subsets
 #### Difficulty: Medium
@@ -984,7 +984,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/s78.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/s78.cpp)
 ---
 ### #79 Word Search
 #### Difficulty: Medium
@@ -1001,7 +1001,7 @@
 2. 没通过
 3. 思路是对的，但是别人的用例能过
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ws79.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ws79.cpp)
 ---
 ### #80 Remove Duplicates from Sorted Array II
 #### Difficulty: Medium
@@ -1013,7 +1013,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rdfsaII80.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rdfsaII80.cpp)
 ---
 ### #81 Search in Rotated Sorted Array II
 #### Difficulty: Medium
@@ -1025,7 +1025,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sirsaII81.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sirsaII81.cpp)
 ---
 ### #82 Remove Duplicates from Sorted List II
 #### Difficulty: Medium
@@ -1038,7 +1038,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rdfslII82.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rdfslII82.cpp)
 ---
 ### #83 Remove Duplicates from Sorted List
 #### Difficulty: Medium
@@ -1050,7 +1050,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rdfsl83.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rdfsl83.cpp)
 ---
 ### #86 Partition List
 #### Difficulty: Medium
@@ -1063,7 +1063,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/pl86.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/pl86.cpp)
 ---
 ### #88 Merge Sorted Array
 #### Difficulty: Easy
@@ -1076,7 +1076,7 @@
 ```
 1. 清除第一个队列里多余的元素
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/msa88.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/msa88.cpp)
 ---
 ### #89 Gray Code
 #### Difficulty: Medium
@@ -1093,7 +1093,7 @@
 1. 百度大法好
 2. 4种方法
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/gc89.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/gc89.cpp)
 ---
 ### #90 Subsets II
 #### Difficulty: Medium
@@ -1107,7 +1107,7 @@
 #### Note
 ``` 
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sII90.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sII90.cpp)
 ---
 ### #91 Decode Ways
 #### Difficulty: Medium
@@ -1121,7 +1121,7 @@
 #### Note
 ``` 
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/dw91.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/dw91.cpp)
 ---
 ### #92 Reverse Linked List II
 #### Difficulty: Medium
@@ -1134,7 +1134,7 @@
 #### Note
 ``` 
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rllII92.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rllII92.cpp)
 ---
 ### #93 Restore IP Addresses
 #### Difficulty: Medium
@@ -1147,7 +1147,7 @@
 ```
 1. 注意0的情况
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ria93.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ria93.cpp)
 ---
 ### #94 Binary Tree Inorder Traversal 
 #### Difficulty: Medium
@@ -1164,7 +1164,7 @@
 3. 后序遍历： 左右根
 4. 更好的方法可以不用visit
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/btit94.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/btit94.cpp)
 ---
 ### #95 Unique Binary Search Trees II
 #### Difficulty: Medium
@@ -1181,7 +1181,7 @@
 1. 百度大法好
 2. new 动态为变量分配内存，返回内存地址
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ubstII95.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ubstII95.cpp)
 ---
 ### #96 Unique Binary Search Trees
 #### Difficulty: Medium
@@ -1198,7 +1198,7 @@
 1. 百度大法好
 2. 用组合数会溢出
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ubst96.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ubst96.cpp)
 ---
 ### #98 Validate Binary Search Tree
 #### Difficulty: Medium
@@ -1212,7 +1212,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/vbst98.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/vbst98.cpp)
 ---
 ### #100 Same Tree
 #### Difficulty: Easy
@@ -1226,7 +1226,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/st100.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/st100.cpp)
 ---
 ### #101 Symmetric Tree
 #### Difficulty: Easy
@@ -1241,7 +1241,7 @@
 ```
 1. 用了100题的方法
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/st101.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/st101.cpp)
 ---
 ### #102 Binary Tree Level Order Traversal
 #### Difficulty: Medium
@@ -1254,7 +1254,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/btlot102.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/btlot102.cpp)
 ---
 ### #103 Binary Tree Zigzag Level Order Traversal
 #### Difficulty: Medium
@@ -1267,7 +1267,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/btzlot103.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/btzlot103.cpp)
 ---
 ### #104 Maximum Depth of Binary Tree
 #### Difficulty: Easy
@@ -1279,7 +1279,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/mdobt104.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mdobt104.cpp)
 ---
 ### #105 Construct Binary Tree from Preorder and Inorder Traversal
 #### Difficulty: Medium
@@ -1293,7 +1293,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cbtfpait105.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cbtfpait105.cpp)
 ---
 ### #106 Construct Binary Tree from Inorder and Postorder Traversal
 #### Difficulty: Medium
@@ -1307,7 +1307,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cbtfiapt106.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cbtfiapt106.cpp)
 ---
 ### #107 Binary Tree Level Order Traversal II
 #### Difficulty: Easy
@@ -1320,7 +1320,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/btlotII107.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/btlotII107.cpp)
 ---
 ### #108 Convert Sorted Array to Binary Search Tree
 #### Difficulty: Easy
@@ -1333,7 +1333,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/csatbst108.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/csatbst108.cpp)
 ---
 ### #109 Convert Sorted List to Binary Search Tree
 #### Difficulty: Medium
@@ -1347,7 +1347,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/csltbst109.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/csltbst109.cpp)
 ---
 ### #110 Balanced Binary Tree
 #### Difficulty: Easy
@@ -1360,7 +1360,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/bbt110.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/bbt110.cpp)
 ---
 ### #111 Minimum Depth of Binary Tree
 #### Difficulty: Easy
@@ -1373,7 +1373,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/mdobt111.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mdobt111.cpp)
 ---
 ### #112 Path Sum
 #### Difficulty: Easy
@@ -1387,7 +1387,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ps112.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ps112.cpp)
 ---
 ### #113 Path Sum II
 #### Difficulty: Medium
@@ -1399,7 +1399,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/psII113.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/psII113.cpp)
 ---
 ### #114 Flatten Binary Tree to Linked List
 #### Difficulty: Medium
@@ -1414,7 +1414,7 @@
 1. 百度大法好
 2. 有递归和非递归
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/fbttll114.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/fbttll114.cpp)
 ---
 ### #116 Populating Next Right Pointers in Each Node
 #### Difficulty: Medium
@@ -1428,7 +1428,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/pnrpien116.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/pnrpien116.cpp)
 ---
 ### #117 Populating Next Right Pointers in Each Node II
 #### Difficulty: Medium
@@ -1441,7 +1441,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/pnrpienII117.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/pnrpienII117.cpp)
 ---
 ### #118 Pascal's Triangle
 #### Difficulty: Easy
@@ -1454,7 +1454,7 @@
 ```
 1. 注意边界
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/pt118.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/pt118.cpp)
 ---
 ### #119 Pascal's Triangle II
 #### Difficulty: Easy
@@ -1469,7 +1469,7 @@
 1. 注意边界
 2. 注意空间复杂度
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ptII119.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ptII119.cpp)
 ---
 ### #120 Triangle
 #### Difficulty: Medium
@@ -1482,7 +1482,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/t120.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/t120.cpp)
 ---
 ### #121 Best Time to Buy and Sell Stock
 #### Difficulty: Easy
@@ -1498,7 +1498,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/bttbass121.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/bttbass121.cpp)
 ---
 ### #122 Best Time to Buy and Sell Stock II
 #### Difficulty: Easy
@@ -1510,7 +1510,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/bttbassII122.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/bttbassII122.cpp)
 ---
 ### #125 Valid Palindrome
 #### Difficulty: Easy
@@ -1524,7 +1524,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/vp125.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/vp125.cpp)
 ---
 ### #127 Word Ladder
 #### Difficulty: Medium
@@ -1540,7 +1540,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/wl127.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/wl127.cpp)
 ---
 ### #129 Sum Root to Leaf Numbers
 #### Difficulty: Medium
@@ -1552,7 +1552,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/srtln129.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/srtln129.cpp)
 ---
 ### #130 Surrounded Regions
 #### Difficulty: Medium
@@ -1565,7 +1565,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sr130.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sr130.cpp)
 ---
 ### #131 Palindrome Partitioning
 #### Difficulty: Medium
@@ -1580,7 +1580,7 @@
 1. 子问题重复求解，可以保存之前求得的子回文字符串集合
 2. 空间换时间
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/pp131.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/pp131.cpp)
 ---
 ### #133 Clone Graph
 #### Difficulty: Medium
@@ -1595,7 +1595,7 @@
 1. 通过Hashmap来建立映射更方便，原点为key，copy为值
 2. 也可以使用图的深度优先遍历
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cg133.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cg133.cpp)
 ---
 ### #134 Gas Station
 #### Difficulty: Medium
@@ -1614,7 +1614,7 @@
 3. 后面不行前面肯定不行，所以不需要回溯
 4. 当到达末尾时sum大于0，并且total大于0就说明可以继续走到记录点，因为就算记录点之前的值为负，sum也可以抵消它
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/gs134.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/gs134.cpp)
 ---
 ### #136 Single Number
 #### Difficulty: Easy
@@ -1628,7 +1628,7 @@
 1. 所有元素异或
 2. hash表
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sn136.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sn136.cpp)
 ---
 ### #137 Single Number II
 #### Difficulty: Medium
@@ -1642,7 +1642,7 @@
 1. hash表
 2. (3 * sum(set(nums)) - sum(nums)) / 2
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/snII137.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/snII137.cpp)
 ---
 ### #138 Copy List with Random Pointer
 #### Difficulty: Medium
@@ -1657,7 +1657,7 @@
 1. 提交代码时可以使用map但是不能使用hash_map
 2. map的底层实现是红黑树，hash_map的底层实现是哈希表
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/clwrp138.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/clwrp138.cpp)
 ---
 ### #139 Word Break
 #### Difficulty: Medium
@@ -1675,7 +1675,7 @@
 2. set的底层实现是红黑树，unordered_set的底层实现是hash表
 3. 用三向单词查找树出现超时，而且对反复求解的子问题没有记录
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/wb139.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/wb139.cpp)
 ---
 ### #141 Linked List Cycle
 #### Difficulty: Easy
@@ -1690,7 +1690,7 @@
 ```
 1. 若是没有额外空间消耗，则通过快指针和慢指针赛跑，如果快指针追上慢指针则代表有循环
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/llc141.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/llc141.cpp)
 ---
 ### #142 Linked List Cycle II
 #### Difficulty: Medium
@@ -1707,7 +1707,7 @@
 2. 设置一个快指针fp和一个慢指针sp，两个指针起始同时指向head节点，其中快指针每次走两步，慢指针每次走一步 
 3. 如果链表中存在环，那么fp和sp一定会相遇，当两个指针相遇的时候，我们设相遇点为c，此时fp和sp都指向了c，接下来令fp继续指向c结点，sp指向链表头结点head，此时最大的不同是fp的步数变成为每次走一步，令fp和sp同时走，每次一步，那么它们再次相遇的时候即为环的入口结点
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/llcII142.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/llcII142.cpp)
 ---
 ### #143 Reorder List
 #### Difficulty: Medium
@@ -1723,7 +1723,7 @@
 ```
 1. 百度大法好
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rl143.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rl143.cpp)
 ---
 ### #144 Binary Tree Preorder Traversal
 #### Difficulty: Medium
@@ -1736,7 +1736,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/btpt144.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/btpt144.cpp)
 ---
 ### #145 Binary Tree Postorder Traversal
 #### Difficulty: Hard
@@ -1750,7 +1750,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/btpt145.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/btpt145.cpp)
 ---
 ### #147 Insertion Sort List
 #### Difficulty: Medium
@@ -1762,7 +1762,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/isl147.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/isl147.cpp)
 ---
 ### #148 Sort List
 #### Difficulty: Medium
@@ -1783,7 +1783,7 @@
 3. 归并排序通过了
 4. 归并排序的实现更简单
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sl148.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sl148.cpp)
 ---
 ### #150 Evaluate Reverse Polish Notation
 #### Difficulty: Medium
@@ -1796,7 +1796,7 @@
 ```
 1. 有负数和超过个位的整数
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/erpn150.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/erpn150.cpp)
 ---
 ### #151 Reverse Words in a String
 #### Difficulty: Medium
@@ -1814,7 +1814,7 @@
 3. 没有活用c++的知识
 4. reserve和resize函数
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rwias151.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rwias151.cpp)
 ---
 ### #152 Maximum Product Subarray
 #### Difficulty: Medium
@@ -1831,7 +1831,7 @@
 ``` 
 1. 若数组数目为1，则直接返回该数
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/mps152.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mps152.cpp)
 ---
 ### #153 Find Minimum in Rotated Sorted Array
 #### Difficulty: Medium
@@ -1843,7 +1843,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/fmirsa153.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/fmirsa153.cpp)
 ---
 ### #154 Find Minimum in Rotated Sorted Array II
 #### Difficulty: Hard
@@ -1856,7 +1856,7 @@
 #### Note
 ``` 
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/fmirsaII154.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/fmirsaII154.cpp)
 ---
 ### #155 Min Stack
 #### Difficulty: Easy
@@ -1870,7 +1870,7 @@
 #### Note
 ``` 
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ms155.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ms155.cpp)
 --- 
 ### #160 Intersection of Two Linked Lists
 #### Difficulty: Easy
@@ -1885,7 +1885,7 @@
 1. 百度大法好
 2. 也可以将一个链表首尾相连后通过快慢指针来计算连接点
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/iotll160.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/iotll160.cpp)
 ---
 ### #162 Find Peak Element
 #### Difficulty: Medium
@@ -1898,7 +1898,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/fpe162.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/fpe162.cpp)
 ---
 ### #165 Compare Version Numbers
 #### Difficulty: Medium
@@ -1912,7 +1912,7 @@
 ```
 1. 1和1.0返回0
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cvn165.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cvn165.cpp)
 ---
 ### #166 Fraction to Recurring Decimal
 #### Difficulty: Medium
@@ -1930,7 +1930,7 @@
 2. abs问题，返回值和参数要一致，否则会出错
 3. string.insert来插入"("、")"
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ftrd166.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ftrd166.cpp)
 ---
 ### #167 Two Sum II - Input array is sorted
 #### Difficulty: Easy
@@ -1943,7 +1943,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/tsII167.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/tsII167.cpp)
 ---
 ### #168 Excel Sheet Column Title
 #### Difficulty: Easy
@@ -1956,7 +1956,7 @@
 ```
 1. 每次取模运算时都要把被取模数自减1
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/esct168.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/esct168.cpp)
 ---
 ### #169 Majority Element
 #### Difficulty: Easy
@@ -1970,7 +1970,7 @@
 1. 可以排序后来count
 2. 通过Boyer-Moore投票算法，即选出的候选人为1，非候选人为-1，当count为0时，选择新的候选人，最后返回候选人，这个也就是互相抵消后得到结果
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/me169.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/me169.cpp)
 ---
 ### #171 Excel Sheet Column Number
 #### Difficulty: Easy
@@ -1983,7 +1983,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/escn171.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/escn171.cpp)
 ---
 ### #172 Factorial Trailing Zeroes
 #### Difficulty: Easy
@@ -1997,7 +1997,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ftz172.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ftz172.cpp)
 ---
 ### #173 Binary Search Tree Iterator
 #### Difficulty: Medium
@@ -2010,7 +2010,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/bsti173.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/bsti173.cpp)
 ---
 ### #179 Largest Number
 #### Difficulty: Medium
@@ -2025,7 +2025,7 @@
 1. sort的比较函数必须写在类外部（全局区域）或声明为静态函数
 2. 还有更好的比较方法，用 a + b 与 b + a比较，代表了a和b的大小关系，而且连接后长度相等
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/bsti173.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/bsti173.cpp)
 ---
 ### #187 Repeated DNA Sequences
 #### Difficulty: Medium
@@ -2040,7 +2040,7 @@
 ```
 1. 百度大法好
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rds187.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rds187.cpp)
 ---
 ### #189 Rotate Array
 #### Difficulty: Easy
@@ -2055,7 +2055,7 @@
 ```
 1. 也可以通过旋转交换来达到目标
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ra189.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ra189.cpp)
 ---
 ### #190 Reverse Bits
 #### Difficulty: Easy
@@ -2067,7 +2067,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rb190.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rb190.cpp)
 ---
 ### #191 Number of 1 Bits
 #### Difficulty: Easy
@@ -2079,7 +2079,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/no1b191.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/no1b191.cpp)
 ---
 ### #198 House Robber
 #### Difficulty: Easy
@@ -2096,7 +2096,7 @@
 ```
 1. 百度大法好
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/hr198.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/hr198.cpp)
 ---
 ### #199 Binary Tree Right Side View
 #### Difficulty: Medium
@@ -2110,7 +2110,7 @@
 ```
 1. 使用STL中queue数据结构实现更加简单
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/btrsv199.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/btrsv199.cpp)
 ---
 ### #200 Number of Islands
 #### Difficulty: Medium
@@ -2125,7 +2125,7 @@
 ```
 1. 也可以使用层次遍历
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/nof200.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/nof200.cpp)
 ---
 ### #201 Bitwise AND of Numbers Range
 #### Difficulty: Medium
@@ -2140,7 +2140,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/baonr201.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/baonr201.cpp)
 ---
 ### #202 Happy Number
 #### Difficulty: Easy
@@ -2153,7 +2153,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/hn202.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/hn202.cpp)
 ---
 ### #203 Remove Linked List Elements
 #### Difficulty: Easy
@@ -2166,7 +2166,7 @@
 ```
 1. 设置一个头结点，简化当要删除链表首部结点的操作
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rlle203.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rlle203.cpp)
 ---
 ### #204 Count Primes
 #### Difficulty: Easy
@@ -2181,7 +2181,7 @@
 1. 百度大法好
 2. 用vector比set效率高
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cp204.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cp204.cpp)
 ---
 ### #205 Isomorphic Strings
 #### Difficulty: Easy
@@ -2195,7 +2195,7 @@
 ```
 1. 更简单的方法，用两个数组保存当前访问的字符在上一次出现的索引，若不相等则返回false，否则更新当前字符的索引
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/is205.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/is205.cpp)
 ---
 ### #206 Reverse Linked List
 #### Difficulty: Easy
@@ -2210,7 +2210,7 @@
 1. 百度大法好
 2. 想复杂了，不需要先遍历到尾部，时间复杂度是O(n)
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/rll206.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rll206.cpp)
 ---
 ### #207 Course Schedule
 #### Difficulty: Medium
@@ -2224,7 +2224,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cs207.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cs207.cpp)
 ---
 ### #208 Implement Trie (Prefix Tree)
 #### Difficulty: Medium
@@ -2239,7 +2239,7 @@
 2. 自己实现的是迭代的，出错了
 3. 也可以用R向单词查找树
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/it208.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/it208.cpp)
 ---
 ### #209 Minimum Size Subarray Sum
 #### Difficulty: Medium
@@ -2254,7 +2254,7 @@
 1. 百度大法好
 2. 和第53题类似
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/msss209.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/msss209.cpp)
 ---
 ### #210 Course Schedule II
 #### Difficulty: Medium
@@ -2268,7 +2268,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/csII210.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/csII210.cpp)
 ---
 ### #211 Add and Search Word - Data structure design
 #### Difficulty: Medium
@@ -2286,7 +2286,7 @@
 2. 自己改的三向单词查找树最后几个测试集没通过
 3. R向单词查找树实现更简单
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/aasw211.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/aasw211.cpp)
 ---
 ### #212 Word Search II
 #### Difficulty: Hard
@@ -2301,7 +2301,7 @@
 ```
 1. 百度大法好
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/wsII212.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/wsII212.cpp)
 ---
 ### #213 House Robber II
 #### Difficulty: Medium
@@ -2315,7 +2315,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/hrII213.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/hrII213.cpp)
 ---
 ### #215 Kth Largest Element in an Array
 #### Difficulty: Medium
@@ -2327,7 +2327,7 @@
 #### Note
 ```
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/kleiaa215.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/kleiaa215.cpp)
 ---
 ### #216 Combination Sum III
 #### Difficulty: Medium
@@ -2340,7 +2340,7 @@
 ```
 1. 若i < n，则后面更大的i不需要计算了
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/CSIII216.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/CSIII216.cpp)
 ---
 ### #217 Contains Duplicate
 #### Difficulty: Easy
@@ -2353,7 +2353,7 @@
 ```
 1. 也可以用排序方法
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cd217.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cd217.cpp)
 ---
 ### #219 Contains Duplicate II
 #### Difficulty: Easy
@@ -2369,7 +2369,7 @@
 2. 边界测试
 3. 负面测试
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cdII219.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cdII219.cpp)
 ---
 ### #220 Contains Duplicate III
 #### Difficulty: Medium
@@ -2388,7 +2388,7 @@
 3. 负面测试
 4. 百度大法好
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cdIII220.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cdIII220.cpp)
 ---
 ### #221 Maximal Square
 #### Difficulty: Medium
@@ -2409,7 +2409,7 @@
 4. 百度大法好
 5. 也有brute force方法，主要是可以通过将1相加得到sum来判断是否是正方形, 时间复杂度O(n^3)
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ms221.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ms221.cpp)
 ---
 ### #222 Count Complete Tree Nodes
 #### Difficulty: Medium
@@ -2428,7 +2428,7 @@
 4. 百度大法好
 5. 用原方法会超时
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/cctn222.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cctn222.cpp)
 ---
 ### #223 Rectangle Area
 #### Difficulty: Medium
@@ -2448,7 +2448,7 @@
 5. 审题有误，想的是求交集
 6. 没想到求min和max来求交集的坐标点
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ra223.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ra223.cpp)
 ---
 ### #225 Implement Stack using Queues
 #### Difficulty: Easy
@@ -2465,7 +2465,7 @@
 4. 对STL的queue操作不熟悉
 5. 还有通过一个queue来实现的解法，通过把前面的数转移到新插入的后面来实现逆序，这样新插入的数就到了queue的首部
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/isuq225.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/isuq225.cpp)
 ---
 ### #226 Invert Binary Tree
 #### Difficulty: Easy
@@ -2482,7 +2482,7 @@
 2. 边界测试
 3. 负面测试
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/ibt226.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ibt226.cpp)
 ---
 ### #227 Basic Calculator II
 #### Difficulty: Medium
@@ -2503,7 +2503,7 @@
 7. 最后只要把所有加法相加就行
 8. 只用一个栈来保存操作符即可
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/bcII227.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/bcII227.cpp)
 ---
 ### #228 Summary Ranges
 #### Difficulty: Medium
@@ -2521,7 +2521,7 @@
 4. 百度大法好
 5. 原来的思路是用二分法，但是mid的连接问题没法解决
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/sr228.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sr228.cpp)
 ---
 ### #229 Majority Element II
 #### Difficulty: Medium
@@ -2538,6 +2538,6 @@
 3. 负面测试(没做)
 4. 百度大法好
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/meII229.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/meII229.cpp)
 ---
 
