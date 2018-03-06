@@ -2523,4 +2523,21 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/sr228.cpp)
 ---
+### #229 Majority Element II
+#### Difficulty: Medium
+#### Date: 2018/3/6
+#### Solution
+```
+1. 找出两个候选众数进行投票，需要两遍遍历，第一遍历找出两个候选众数，第二遍遍历重新投票验证这两个候选众数是否为众数即可
+2. 选候选众数方法和前面那篇Majority Element 求众数一样，由于之前那题题目中限定了一定会有众数存在，故而省略了验证候选众数的步骤，这道题却没有这种限定，即满足要求的众数可能不存在，所以要有验证
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(没做)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/meII229.cpp)
+---
 
