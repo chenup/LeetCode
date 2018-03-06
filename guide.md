@@ -2540,4 +2540,55 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/meII229.cpp)
 ---
+### #230 Kth Smallest Element in a BST
+#### Difficulty: Medium
+#### Date: 2018/3/6
+#### Solution
+```
+1. 中序遍历
+2. 递归
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/kseiab230.cpp)
+---
+### #231 Power of Two
+#### Difficulty: Easy
+#### Date: 2018/3/6
+#### Solution
+```
+1. 取模2判断这种效率最差
+2. 注意负数、0和1的情况
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试(no)
+3. 负面测试(no)
+4. 位操作更快
+5. n & (n - 1) == 0 表示是2的幂
+6. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/pot231.cpp)
+---
+### #232 PImplement Queue using Stacks
+#### Difficulty: Easy
+#### Date: 2018/3/6
+#### Solution
+```
+1. 用一个栈来实现
+2. 每次push操作之前用一个临时栈把当前栈的值都保存，再把值push到当前栈，最后恢复临时栈的值
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/iqus232.cpp)
+---
 
