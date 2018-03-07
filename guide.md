@@ -2575,7 +2575,7 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/pot231.cpp)
 ---
-### #232 PImplement Queue using Stacks
+### #232 Implement Queue using Stacks
 #### Difficulty: Easy
 #### Date: 2018/3/6
 #### Solution
@@ -2590,5 +2590,92 @@
 3. 负面测试(no)
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/iqus232.cpp)
+---
+### #234 Palindrome Linked List
+#### Difficulty: Easy
+#### Date: 2018/3/7
+#### Solution
+```
+1. 快慢指针找到链表中点
+2. 慢指针指向的后半部分翻转
+3. 比较两个链表
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/pII234.cpp)
+---
+### #235 Lowest Common Ancestor of a Binary Search Tree
+#### Difficulty: Easy
+#### Date: 2018/3/7
+#### Solution
+```
+1. 二分法
+2. 对于二叉搜索树，公共祖先的值一定大于等于较小的节点，小于等于较大的节点。换言之，在遍历树的时候，如果当前结点大于两个节点，则结果在当前结点的左子树里，如果当前结点小于两个节点，则结果在当前节点的右子树里
+3. 深度优先标记
+4. 可以用深度优先搜索，从叶子节点向上，标记子树中出现目标节点的情况。如果子树中有目标节点，标记为那个目标节点，如果没有，标记为null。显然，如果左子树、右子树都有标记，说明就已经找到最小公共祖先了。如果在根节点为p的左右子树中找p、q的公共祖先，则必定是p本身
+5. 换个角度，可以这么想：如果一个节点左子树有两个目标节点中的一个，右子树没有，那这个节点肯定不是最小公共祖先。如果一个节点右子树有两个目标节点中的一个，左子树没有，那这个节点肯定也不是最小公共祖先。只有一个节点正好左子树有，右子树也有的时候，才是最小公共祖先
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 注意二叉搜索数的特性
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/lcaoabst235.cpp)
+---
+### #236 Lowest Common Ancestor of a Binary Tree
+#### Difficulty: Medium
+#### Date: 2018/3/7
+#### Solution
+```
+1. 深度优先标记
+2. 可以用深度优先搜索，从叶子节点向上，标记子树中出现目标节点的情况。如果子树中有目标节点，标记为那个目标节点，如果没有，标记为null。显然，如果左子树、右子树都有标记，说明就已经找到最小公共祖先了。如果在根节点为p的左右子树中找p、q的公共祖先，则必定是p本身
+3. 换个角度，可以这么想：如果一个节点左子树有两个目标节点中的一个，右子树没有，那这个节点肯定不是最小公共祖先。如果一个节点右子树有两个目标节点中的一个，左子树没有，那这个节点肯定也不是最小公共祖先。只有一个节点正好左子树有，右子树也有的时候，才是最小公共祖先
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/lcaoabt236.cpp)
+---
+### #237 Delete Node in a Linked List
+#### Difficulty: Easy
+#### Date: 2018/3/7
+#### Solution
+```
+1. 删除一个结点主要是删除它的值
+2. 将后面结点的值覆盖当前结点，然后删除后面的结点
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/dniall237.cpp)
+---
+### #238 Product of Array Except Self
+#### Difficulty: Medium
+#### Date: 2018/3/7
+#### Solution
+```
+1. 对于某一个数字，如果我们知道其前面所有数字的乘积，同时也知道后面所有的数乘积，那么二者相乘就是我们要的结果，所以我们只要分别创建出这两个数组即可，分别从数组的两个方向遍历就可以分别创建出乘积累积数组
+2. 对上面的方法进行空间上的优化，由于最终的结果都是要乘到结果res中，所以我们可以不用单独的数组来保存乘积，而是直接累积到res中，我们先从前面遍历一遍，将乘积的累积存入res中，然后从后面开始遍历，用到一个临时变量right，初始化为1，然后每次不断累积，最终得到正确结果
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/poaes238.cpp)
 ---
 
