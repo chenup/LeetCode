@@ -2678,4 +2678,73 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/poaes238.cpp)
 ---
+### #240 Search a 2D Matrix II
+#### Difficulty: Medium
+#### Date: 2018/3/11
+#### Solution
+```
+1. 发现有两个位置的数字很有特点，左下角和右上角的数。左下角往上所有的数变小，往右所有数增加，那么我们就可以和目标数相比较，如果目标数大，就往右搜，如果目标数小，就往左搜。这样就可以判断目标数是否存在。
+2. 当然我们也可以把起始数放在右上角，往左和下搜，停止条件设置正确就行。
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+5. 思路类似但是选择的开始点有误, 都是把矩阵查找范围不断缩小
+6. 是否可以在其中加入二分法
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sa2mII240.cpp)
+---
+### #241 Different Ways to Add Parentheses
+#### Difficulty: Medium
+#### Date: 2018/3/11
+#### Solution
+```
+1. 分治法
+2. 对于输入字符串，若其中有运算符，则将其分为两部分，分别递归计算其值，然后将左值集合与右值集合进行交叉运算，将运算结果放入结果集中；若没有运算符，则直接将字符串转化为整型数放入结果集中
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/dwtap241.cpp)
+---
+### #242 Valid Anagram
+#### Difficulty: Easy
+#### Date: 2018/3/11
+#### Solution
+```
+1. 先比较两个字符串的长度
+2. 用map来保存第一个字符串的字母出现的次数
+3. 遍历第二个字符串的过程中将相同字母出现的次数减去直至都为0，若有没出现过的字母直接返回false
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sa2mII240.cpp)
+---
+### #257 Binary Tree Paths
+#### Difficulty: Easy
+#### Date: 2018/3/11
+#### Solution
+```
+1. DFS
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/btp257.cpp)
+---
+
 
