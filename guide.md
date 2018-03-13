@@ -2763,5 +2763,233 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/ad258.cpp)
 ---
+### #260 Single Number III
+#### Difficulty: Medium
+#### Date: 2018/3/13
+#### Solution
+```
+1. 先把所有数异或
+2. 再取异或中为1的位来把数分为两组，该位为1与不为1的
+3. 分别把每组的各个数异或得到结果
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/snIII260.cpp)
+---
+### #263 Ugly Number
+#### Difficulty: Easy
+#### Date: 2018/3/13
+#### Solution
+```
+1. 不停的除以 2、3、5
+2. 注意负数
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/un263.cpp)
+---
+### #264 Ugly Number II
+#### Difficulty: Medium
+#### Date: 2018/3/13
+#### Solution
+```
+1. 丑陋数序列可以拆分为下面3个子列表：
+
+(1) 1x2,  2x2, 2x2, 3x2, 3x2, 4x2, 5x2...
+(2) 1x3,  1x3, 2x3, 2x3, 2x3, 3x3, 3x3...
+(3) 1x5,  1x5, 1x5, 1x5, 2x5, 2x5, 2x5...
+2. 仔细观察上述三个列表，我们可以发现每个子列表都是一个丑陋数分别乘以2,3,5，而要求的丑陋数是从已经生成的序列中取出来的，我们每次都从三个列表中取出当前最小的那个加入序列
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/unII264.cpp)
+---
+### #268 Missing Number
+#### Difficulty: Easy
+#### Date: 2018/3/13
+#### Solution
+```
+1. 计算0到n的和再减去当前数组
+2. 也可以用完整的数组和当前数组异或
+3. 也可以二分查找，但要先快排
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mn268.cpp)
+---
+### #274 H-Index
+#### Difficulty: Medium
+#### Date: 2018/3/13
+#### Solution
+```
+1. 快排(从大到小)
+2. 遍历数组，当(i + 1) > citations[i]时返回i
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/hi274.cpp)
+---
+### #275 H-Index II
+#### Difficulty: Medium
+#### Date: 2018/3/13
+#### Solution
+```
+1. 类似于274题，只是数组排列是从小到大
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/hiII275.cpp)
+---
+### #278 First Bad Version
+#### Difficulty: Easy
+#### Date: 2018/3/13
+#### Solution
+```
+1. 二分查找
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好，若lo和right非常大，则会溢出
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/fbv278.cpp)
+---
+### #275 H-Index II
+#### Difficulty: Medium
+#### Date: 2018/3/13
+#### Solution
+```
+1. 类似于274题，只是数组排列是从小到大
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/hiII275.cpp)
+---
+### #279 Perfect Squares
+#### Difficulty: Medium
+#### Date: 2018/3/13
+#### Solution
+```
+1. 动态规划，最常规的做法，用dp[n + 1]保存每个数最小的组成数目
+2. 根据四平方和定理，任意一个正整数均可表示为4个整数的平方和，其实是可以表示为4个以内的平方数之和，那么就是说返回结果只有1,2,3或4其中的一个
+3. 首先我们将数字化简一下，由于一个数如果含有因子4，那么我们可以把4都去掉，并不影响结果，比如2和8,3和12等等，返回的结果都相同
+4. 还有一个可以化简的地方就是，如果一个数除以8余7的话，那么肯定是由4个完全平方数组成，
+5. 那么做完两步后，一个很大的数有可能就会变得很小了，大大减少了运算时间，下面我们就来尝试的将其拆为两个平方数之和，如果拆成功了那么就会返回1或2，因为其中一个平方数可能为0. (注：由于输入的n是正整数，所以不存在两个平方数均为0的情况)
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ps279.cpp)
+---
+### #283 Move Zeroes
+#### Difficulty: Easy
+#### Date: 2018/3/13
+#### Solution
+```
+1. 用两个指针，一个不停的向后扫，找到非零位置，然后和前面那个指针交换位置即可
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mz283.cpp)
+---
+### #290 Word Pattern
+#### Difficulty: Easy
+#### Date: 2018/3/13
+#### Solution
+```
+1. 用hash表来记录
+2. 可以通过istringstream in(str); in >> word;来分离字符
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/wp290.cpp)
+---
+### #292 Nim Game
+#### Difficulty: Easy
+#### Date: 2018/3/13
+#### Solution
+```
+1. 每人每步最多划三条线，所以线的总是至少为4条。当线的总数为4条的时候，不管先手划几条线，后手都有应对的方法，先手必输
+2. 所以你会发现8条也是必输，8条线可以分成两个部分，每个部分四条线。自然先手还是必输。4这个数字还真是不太吉利
+3. 当线的总数为5条的时候，先手先划掉一条线，后手就等于是在4条线的情况下先手，自然后手输
+4. Nim游戏是博弈论中最经典的模型
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ng292.cpp)
+---
+### #300 Longest Increasing Subsequence
+#### Difficulty: Medium
+#### Date: 2018/3/13
+#### Solution
+```
+1. 动态规划
+2. 先建立一个数组 ends，把首元素放进去，然后比较之后的元素.
+3. 如果遍历到的新元素比ends数组中的首元素小的话，替换首元素为此新元素;
+4. 如果遍历到的新元素比ends数组中的末尾元素还大的话，将此新元素添加到ends数组末尾(注意不覆盖原末尾元素);
+5. 如果遍历到的新元素比ends数组首元素大，比尾元素小时，此时用二分查找法找到第一个不小于此新元素的位置，覆盖掉位置的原来的数字;
+6. 以此类推直至遍历完整个 nums 数组，此时 ends 数组的长度就是我们要求的 LIS 的长度，特别注意的是 ends 数组的值可能不是一个真实的LIS，比如若输入数组nums为 {4, 2， 4， 5， 3， 7}，那么算完后的ends数组为{2， 3， 5， 7}，可以发现它不是一个原数组的LIS，只是长度相等而已，千万要注意这点
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好，O(nlogn)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/lis300.cpp)
+---
+
+
+
+
 
 
