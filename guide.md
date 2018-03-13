@@ -2746,5 +2746,22 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/btp257.cpp)
 ---
+### #258 Add Digits
+#### Difficulty: Easy
+#### Date: 2018/3/12
+#### Solution
+```
+1. 求数根，所谓树根，就是将大于10的数的各个位上的数字相加，若结果还大于10的话，则继续相加，直到数字小于10为止
+2. 每9个一循环，所有大于9的数的树根都是对9取余，那么对于等于9的数对9取余就是0了，为了得到其本身，而且同样也要对大于9的数适用，我们就用(n-1)%9+1这个表达式来包括所有的情况
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好，获得O(1)的时间复杂度
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ad258.cpp)
+---
 
 
