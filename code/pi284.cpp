@@ -15,8 +15,10 @@ public:
 
 
 class PeekingIterator : public Iterator {
+    bool hasCached;
+    int cache;
 public:
-    PeekingIterator(const vector<int>& nums) : Iterator(nums) {
+    PeekingIterator(const vector<int>& nums) : Iterator(nums), hasCached(false) {
         // Initialize any member here.
         // **DO NOT** save a copy of nums and manipulate it directly.
         // You should only use the Iterator interface methods.
@@ -25,16 +27,40 @@ public:
 
     // Returns the next element in the iteration without advancing the iterator.
     int peek() {
-        
+        if(hasCached)
+        {
+            return cache;
+        }
+        else
+        {
+            hasCached = true;
+            cache = Iterator::next();
+            return cache;
+        }
     }
 
     // hasNext() and next() should behave the same as in the Iterator interface.
     // Override them if needed.
     int next() {
-        return Iterator::next();
+        if(hasCached)
+        {
+            hasCached = false;
+            return cache;
+        }
+        else
+        {
+            return Iterator::next();
+        }
     }
 
     bool hasNext() const {
-        return Iterator::hasNext();
+        if(hasCached)
+        {
+            return true;
+        }
+        else
+        {
+            return Iterator::hasNext();
+        }
     }
 };

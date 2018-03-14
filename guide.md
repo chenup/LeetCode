@@ -2931,6 +2931,58 @@
 3. 负面测试(no)
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/mz283.cpp)
+--- 
+### #284 Peeking Iterator
+#### Difficulty: Medium
+#### Date: 2018/3/14
+#### Solution
+```
+1. 增加一个cache缓存一下next()返回值作为peek()的返回值，并标记这个元素已经在缓存里就可以了
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/pi284.cpp)
+--- 
+### #287 Find the Duplicate Number
+#### Difficulty: Medium
+#### Date: 2018/3/14
+#### Solution
+```
+1. 抽屉原理(又叫鸽巢原理)
+2. 用二分搜索法了，我们在区别[1, n]中搜索，首先求出中点mid，然后遍历整个数组，统计所有小于等于mid的数的个数，如果个数大于mid，则说明重复值在[1, mid]之间，反之，重复值应在[mid + 1, n]之间，然后依次类推，直到搜索完成，此时的low就是我们要求的重复值
+3. 利用坐标和数值之间相互转换，而由于重复数字的存在，那么一定会形成环，我们用快慢指针可以找到环并确定环的起始位置，用快慢指针确定环的起点位置，即重复点的位置
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ftdn287.cpp)
+---
+### #289 Game of Life
+#### Difficulty: Medium
+#### Date: 2018/3/14
+#### Solution
+```
+1. 位操作
+2. 将下轮该cell要变的值存入第1位bit中
+3. 然后还原的时候右移
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/gol289.cpp)
 ---
 ### #290 Word Pattern
 #### Difficulty: Easy
@@ -2965,6 +3017,23 @@
 3. 负面测试(no)
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/ng292.cpp)
+---
+### #299 Bulls and Cows
+#### Difficulty: Medium
+#### Date: 2018/3/14
+#### Solution
+```
+1. 相应位相同的数字直接bulls加一
+2. 把不同的数字保存起来并计算有多少cows，
+3. 用一个26单元的数组来保存，secret为+1操作，guess为-1操作，在遍历过程中判断之前这个数字有没有出现过
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/bac299.cpp)
 ---
 ### #300 Longest Increasing Subsequence
 #### Difficulty: Medium
