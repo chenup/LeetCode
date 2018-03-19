@@ -3055,9 +3055,39 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/lis300.cpp)
 ---
-
-
-
-
+### #303 Range Sum Query - Immutable
+#### Difficulty: Easy
+#### Date: 2018/3/19
+#### Solution
+```
+1. 用cache，用cache[i+1]保存sum(nums[0]...sum[i]), 在构造函数里面初始化
+2. 结果为cache[j+1] - cache[i]
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rsq303.cpp)
+---
+### #304 Range Sum Query 2D - Immutable
+#### Difficulty: Medium
+#### Date: 2018/3/19
+#### Solution
+```
+1. 用cache
+2. 维护一个二维数组dp，其中dp[i][j]表示累计区间(0, 0)到(i, j)这个矩形区间所有的数字之和，那么此时如果我们想要快速求出(r1, c1)到(r2, c2)的矩形区间时，只需dp[r2][c2] - dp[r2][c1 - 1] - dp[r1 - 1][c2] + dp[r1 - 1][c1 - 1]即可
+3. 由于用了辅助列和辅助行，所以下标会有些变化
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 可以使用resize来改变vector的大小
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rsq2d304.cpp)
+---
 
 
