@@ -3089,5 +3089,37 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/rsq2d304.cpp)
 ---
-
-
+### #306 Additive Number
+#### Difficulty: Medium
+#### Date: 2018/3/20
+#### Solution
+```
+1. 让第一个数字先从一位开始，第二个数字从一位，两位，往高位开始搜索，前两个数字确定了，相加得到第三位数字，三个数组排列起来形成一个字符串，和原字符串长度相比，如果小于原长度，那么取出上一次计算的第二个和第三个数，当做新一次计算的前两个数，用相同的方法得到第三个数，再加入当前字符串，再和原字符串长度相比，以此类推，直到当前字符串长度不小于原字符串长度，比较两者是否相同，相同返回true，不相同则继续循环。如果所有情况都遍历完了还是没有返回true，则说明不是Additive Number，返回false
+2. 回溯法(递归)
+3. 注意用long long 代替 int，字符串转化为整数可能超过int的最大范围
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/an306.cpp)
+---
+### #307 Range Sum Query - Mutable
+#### Difficulty: Medium
+#### Date: 2018/3/20
+#### Solution
+```
+1. 树状数组或二叉索引树（Binary Indexed Tree）, 又以其发明者命名为Fenwick树
+2. 也可以用线段树(segment tree)
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rsq307.cpp)
+---
