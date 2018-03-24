@@ -2340,7 +2340,7 @@
 ```
 1. 若i < n，则后面更大的i不需要计算了
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/code/CSIII216.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/csIII216.cpp)
 ---
 ### #217 Contains Duplicate
 #### Difficulty: Easy
