@@ -1682,7 +1682,7 @@
 #### Date: 2018/2/2
 #### Solution
 ```
-1. 通过hash表比用vector效率要高，插入和查找的效率都快，vector的底层实现是红黑树
+1. 通过hash表比用vector效率要高，插入和查找的效率都快，vector的底层实现是数组
 2. 如果访问到null则返回false
 3. 将已访问到的结点保存到hash表里，若当前访问的结点已存在hash表则返回true
 ```
@@ -1697,7 +1697,7 @@
 #### Date: 2018/2/18
 #### Solution
 ```
-1. 通过hash表比用vector效率要高，插入和查找的效率都快，vector的底层实现是红黑树
+1. 通过hash表比用vector效率要高，插入和查找的效率都快，vector的底层实现是数组
 2. 如果访问到null则返回null
 3. 将已访问到的结点保存到hash表里，若当前访问的结点已存在hash表则返回当前结点
 ```
@@ -3123,3 +3123,88 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/rsq307.cpp)
 ---
+### #498 Diagonal Traverse
+#### Difficulty: Medium
+#### Date: 2018/3/26
+#### Solution
+```
+1. 根据题目的要求实现代码就行，主要是边界判断
+2. 对角线上的数字的横纵坐标之和恒定
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/dt498.cpp)
+---
+### #671 Second Minimum Node In a Binary Tree
+#### Difficulty: Easy
+#### Date: 2018/3/28
+#### Solution
+```
+1. 深度优先搜索第二小的值
+2. 因为根的值小于等于子结点，若等于则继续往下搜索，若小于则直接返回
+3. 递归
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/smniabt671.cpp)
+---
+### #746 Min Cost Climbing Stairs
+#### Difficulty: Easy
+#### Date: 2018/3/25
+#### Solution
+```
+1. 动态规划
+2. dp数组 
+3. dp[i] = min(dp[i - 1], dp[i - 2]) + cost[i]
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mccs746.cpp)
+---
+### #767 Reorganize String
+#### Difficulty: Medium
+#### Date: 2018/3/28
+#### Solution
+```
+1. 遍历字符串，用map保存每个字符出现的次数并保存出现次数最大的字符
+2. 最大字符的数目不能超过字符串偶数位的大小，之后把最大字符依次填充进偶数位
+3. 遍历map，把字符填充剩余的偶数位和所有奇数位
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rs767.cpp)
+---
+
+### #771 Jewels and Stones
+#### Difficulty: Easy
+#### Date: 2018/3/27
+#### Solution
+```
+1. 遍历J，缓存拥有的字符
+2. 遍历S，如果这个字符拥有则加一
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/jas771.cpp)
+---
+
