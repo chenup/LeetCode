@@ -3123,6 +3123,63 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/rsq307.cpp)
 ---
+### #309 Best Time to Buy and Sell Stock with Cooldown
+#### Difficulty: Medium
+#### Date: 2018/3/29
+#### Solution
+```
+1. buy[i]表示在第i天之前最后一个操作是买，此时的最大收益
+2. sell[i]表示在第i天之前最后一个操作是卖，此时的最大收益
+3. buy[i]  = max(sell[i-2] - price, buy[i-1]) 
+4. sell[i] = max(buy[i-1] + price, sell[i-1])
+5. 动态规划
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/bttbasswc309.cpp)
+---
+### #326 Power of Three
+#### Difficulty: Easy
+#### Date: 2018/3/30
+#### Solution
+```
+1. 不停地除以3，看最后的余数是否为1，要注意考虑输入是负数和0的情况
+2. 投机取巧的方法，由于输入是int，正数范围是0-2^31，在此范围中允许的最大的3的次方数为319=1162261467，那么我们只要看这个数能否被n整除即可
+3. 最后还有一种巧妙的方法，利用对数的换底公式来做，高中学过的换底公式为loga(b) = logc(b) / logc(a)，那么如果n是3的倍数，则log3(n)一定是整数，我们利用换底公式可以写为log3(n) = log10(n) / log10(3)，注意这里一定要用10为底数，不能用自然数或者2为底数，否则当n=243时会出错。现在问题就变成了判断log10n / log103是否为整数，在c++中判断数字a是否为整数，我们可以用 a - int(a) == 0 来判断
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/pot326.cpp)
+---
+### #421 Maximum XOR of Two Numbers in an Array
+#### Difficulty: Medium
+#### Date: 2018/3/30
+#### Solution
+```
+1. 给定了数字的返回不会超过2^31,那么最多只能有32位
+2. 用一个从左往右(高位到低位)的mask，用来提取数字的前缀，然后将其都存入set中(每次set初始化为空)
+3. 我们用一个变量t, t = res | (1 << i)，验证第i位是否为1，看结果t和set中的前缀异或之后的值在不在set中
+4. 这里用到了一个性质，若a^b=c，那么a=b^c，因为t是我们要验证的当前最大值，所以我们遍历set中的数时，和t异或后的结果仍在set中，说明两个前缀可以异或出t的值，所以我们更新res为t，继续遍历获取下一位的前缀
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mxotniaa421.cpp)
+---
 ### #498 Diagonal Traverse
 #### Difficulty: Medium
 #### Date: 2018/3/26
@@ -3138,6 +3195,21 @@
 3. 负面测试(no)
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/dt498.cpp)
+---
+### #500 Keyboard Row
+#### Difficulty: Easy
+#### Date: 2018/3/30
+#### Solution
+```
+1. 把键盘的三行字符分别保存到三个(set或者数组)中，然后遍历每个单词中的每个字符，分别看当前字符是否在三个集合中
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/kr500.cpp)
 ---
 ### #671 Second Minimum Node In a Binary Tree
 #### Difficulty: Easy
@@ -3155,6 +3227,22 @@
 3. 负面测试(no)
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/smniabt671.cpp)
+---
+### #744 Find Smallest Letter Greater Than Target
+#### Difficulty: Easy
+#### Date: 2018/3/30
+#### Solution
+```
+1. 二分查找
+2. 也可以用自带的upper_bound()函数
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/fslgtt744.cpp)
 ---
 ### #746 Min Cost Climbing Stairs
 #### Difficulty: Easy
@@ -3190,7 +3278,6 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/rs767.cpp)
 ---
-
 ### #771 Jewels and Stones
 #### Difficulty: Easy
 #### Date: 2018/3/27
