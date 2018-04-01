@@ -3143,6 +3143,81 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/bttbasswc309.cpp)
 ---
+### #310 Minimum Height Trees
+#### Difficulty: Medium
+#### Date: 2018/3/31
+#### Solution
+```
+1. 广度优先搜索(一层一层剥洋葱)
+2. 建立图g，是一个二维数组，其中g[i]是一个一维数组，保存了i节点可以到达的所有节点(可以用unordered_set来保存相连结点)
+3. 将所有只有一个连接边的节点(叶节点)都存入到一个队列queue中，然后遍历每一个叶节点，通过图来找到和其相连的节点，并且在其相连节点的集合中将该叶节点删去，如果删完后此节点也也变成一个叶节点了，加入队列中，再下一轮删除
+4. 当节点数小于等于2时候停止，此时剩下的一个或两个节点就是最小高度树的根节点
+5. 也可以计算图的最大半径
+6. 找图的直径，即图里最远的两个点，以直径的中间的一个或两个点作为根，图的高度是直径的一半，即为最小树高
+7. 以任意一点A作为原点进行BFS或DFS，找到最远的点B，以点B为原点再进行搜索，找到最远的点C，B到C的路径即为直径
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mht310.cpp)
+---
+### #313 Super Ugly Number
+#### Difficulty: Medium
+#### Date: 2018/4/1
+#### Solution
+```
+1. 类似264 Ugly Number II
+2. 由于不知道质数的个数，所以用vector保存位置
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sun313.cpp)
+---
+### #318 Maximum Product of Word Lengths
+#### Difficulty: Medium
+#### Date: 2018/4/1
+#### Solution
+```
+1. bit manipulation
+2. 用mask，由于题目中都是小写字母，那么只有26位，一个整型数int有32位，我们可以用低26位来对应26个字母，若为1，说明该对应位置的字母出现过，那么每个单词的都可由一个int数字表示，两个单词没有共同字母的条件是这两个int数相与为0
+3. 最后vector中的mask两两相与得到max
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/mpowl318.cpp)
+---
+### #319 Bulb Switcher
+#### Difficulty: Medium
+#### Date: 2018/4/1
+#### Solution
+```
+1. 找规律
+2. 对于第n个灯泡，只有当次数是n的因子的之后，才能改变灯泡的状态，即n能被当前次数整除
+3. 比如当n为36时，它的因数有(1,36), (2,18), (3,12), (4,9), (6,6), 可以看到前四个括号里成对出现的因数各不相同，括号中前面的数改变了灯泡状态，后面的数又变回去了，等于锁的状态没有发生变化，只有最后那个(6,6)，在次数6的时候改变了一次状态，没有对应其它的状态能将其变回去了，所以锁就一直是打开状态的。所以所有平方数都有这么一个相等的因数对，即所有平方数的灯泡都将会是打开的状态
+4. 问题就简化为"求1到n之间完全平方数的个数"
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/bs319.cpp)
+---
 ### #326 Power of Three
 #### Difficulty: Easy
 #### Date: 2018/3/30
@@ -3160,6 +3235,21 @@
 4. 百度大法好
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/pot326.cpp)
+---
+### #344 Reverse String
+#### Difficulty: Easy
+#### Date: 2018/4/1
+#### Solution
+```
+1. 使用algorithm库里面的reverse函数
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rs344.cpp)
 ---
 ### #421 Maximum XOR of Two Numbers in an Array
 #### Difficulty: Medium
