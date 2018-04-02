@@ -3218,6 +3218,43 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/bs319.cpp)
 ---
+### #322 Coin Change
+#### Difficulty: Medium
+#### Date: 2018/4/2
+#### Solution
+```
+1. 动态规划
+2. dp[i] = min(dp[i], dp[i - coins[j]] + 1)
+3. 其中coins[j]为第j个硬币，而i - coins[j]为钱数i减去其中一个硬币的值，剩余的钱数在dp数组中找到值，然后加1和当前dp数组中的值做比较，取较小的那个更新dp数组
+4. 迭代，数组实现
+5. 递归，可以用hash表实现
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cc322.cpp)
+---
+### #324 Wiggle Sort II
+#### Difficulty: Medium
+#### Date: 2018/4/2
+#### Solution
+```
+1. 一种比较naive的做法是先对数组进行排序, 然后从左往右奇数索引位置放大于中位数的数, 然后从右往左在偶数索引位置放小于中位数的数, 剩下的位置都放中位数. 其时间复杂度为O(nlog(n)), 空间复杂度为O(n)
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+5. follow up 做法比较复杂，没实现，有空再看
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/wsII324.cpp)
+---
 ### #326 Power of Three
 #### Difficulty: Easy
 #### Date: 2018/3/30
@@ -3250,6 +3287,24 @@
 3. 负面测试(no)
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/rs344.cpp)
+---
+### #345 Reverse Vowels of a String
+#### Difficulty: Easy
+#### Date: 2018/4/2
+#### Solution
+```
+1. 元音字母是 a e i o u (还有大写)
+2. 前后两个指针指向当前的元音字母替换
+3. 用string的库函数find_first_of和find_last_of
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rvoas345.cpp)
 ---
 ### #421 Maximum XOR of Two Numbers in an Array
 #### Difficulty: Medium
