@@ -3269,9 +3269,81 @@
 1. 功能测试
 2. 边界测试
 3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/oell328.cpp)
+---
+### #328 Odd Even Linked List
+#### Difficulty: Medium
+#### Date: 2018/4/3
+#### Solution
+```
+1. 用odd_head指针来保存指向奇结点的链表
+2. 用even_head指针来保存指向偶结点的链表
+3. 最后合并两个链表
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/oell328.cpp)
+---
+### #331 Verify Preorder Serialization of a Binary Tree
+#### Difficulty: Medium
+#### Date: 2018/4/3
+#### Solution
+```
+1. 数字的个数总是比#号少一个
+2. 最后一个一定是#号
+3. 那么我们假如先不考虑最后一个#号，那么此时数字和#号的个数应该相同，如果我们初始化一个为0的计数器，遇到数字，计数器加1，遇到#号，计数器减1，那么到最后计数器应该还是0
+4. 下面我们再来看两个返回False的例子，"#,7,6,9,#,#,#"和"7,2,#,2,#,#,#,6,#"，通过这两个反例我们可以看出，如果根节点为空的话，后面不能再有节点，而且不能有三个连续的#号出现
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
 4. 百度大法好
 ```
-[code link](https://github.com/chenup/LeetCode/blob/master/code/pot326.cpp)
+[code link](https://github.com/chenup/LeetCode/blob/master/code/vpsoabt331.cpp)
+---
+### #332 Reconstruct Itinerary
+#### Difficulty: Medium
+#### Date: 2018/4/3
+#### Solution
+```
+1. 首先把图建立起来，通过邻接链表来建立。由于题目要求解法按字母顺序小的，那么我们考虑用multiset，可以自动排序。
+2. 图建立好了以后，从节点JFK开始遍历，只要当前节点映射的multiset里有节点，取出这个节点，将其在multiset里删掉，然后继续递归遍历这个节点，由于题目中限定了一定会有解，那么等图中所有的multiset中都没有节点的时候，我们把当前节点存入结果中，然后再一层层回溯回去，将当前节点都存入结果，那么最后我们结果中存的顺序和我们需要的相反的
+3. 最后再翻转一下即可
+4. 也可用栈来实现
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ri332.cpp)
+---
+### #342 Power of Four
+#### Difficulty: Easy
+#### Date: 2018/4/2
+#### Solution
+```
+1. 换底公式
+2. (2^k - 1) & 2^k == 0
+3. 4^k - 1是3的倍数
+4. 4的次方数的最高位的1都是计数位，那么我们只需与上一个数(0x55555555) <==> 1010101010101010101010101010101，如果得到的数还是其本身，则可以肯定其为4的次方数
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/pof342.cpp)
 ---
 ### #344 Reverse String
 #### Difficulty: Easy
@@ -3305,6 +3377,37 @@
 4. 百度大法好
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/rvoas345.cpp)
+---
+### #349 Intersection of Two Arrays
+#### Difficulty: Easy
+#### Date: 2018/4/2
+#### Solution
+```
+1. 用set把nums1都放进去(也可以用map)，然后遍历nums2的元素，如果在set中存在，说明是交集的部分，加入结果的set中，最后再把结果转为vector的形式
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/iota349.cpp)
+---
+### #350 Intersection of Two Arrays II
+#### Difficulty: Easy
+#### Date: 2018/4/2
+#### Solution
+```
+1. 用哈希表来建立nums1中字符和其出现个数之间的映射
+2. 然后遍历nums2数组，如果当前字符在哈希表中的个数大于0，则将此字符加入结果res中，然后哈希表的对应值自减1
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/iotaII350.cpp)
 ---
 ### #421 Maximum XOR of Two Numbers in an Array
 #### Difficulty: Medium
