@@ -3327,6 +3327,64 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/ri332.cpp)
 ---
+### #334 Increasing Triplet Subsequence
+#### Difficulty: Medium
+#### Date: 2018/4/4
+#### Solution
+```
+1. 用m1保存当前序列第一个数，m2保存当前序列第二个数，初始值为INT_MAX，遍历数组，如果m1小于等于num[i]，则m1赋值为num[i]，否则如果m2小于等于num[i]，则m2赋值为num[i]，如果num[i]比m1和m2都大的话，则序列存在
+2. 也可以建立两个数组，forward数组和backward数组，其中forward[i]表示[0, i]之间最小的数，backward[i]表示[i, n-1]之间最大的数，那么对于任意一个位置i，如果满足 forward[i] < nums[i] < backward[i]，则表示这个递增三元子序列存在
+3. 也可以用动态规划来做，但是效率没前两个好，dp[i] = max(dp[i], dp[j] + 1) 0 <= j < i，dp[i] = 3则代表序列存在
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/its334.cpp)
+---
+### #337 House Robber III
+#### Difficulty: Medium
+#### Date: 2018/4/4
+#### Solution
+```
+1. 递归，hash表
+2. 递归函数返回一个大小为2的一维数组res，其中res[0]表示不包含当前节点值的最大值，res[1]表示包含当前值的最大值，那么我们在遍历某个节点时，首先对其左右子节点调用递归函数，分别得到包含与不包含左子节点值的最大值，和包含与不包含右子节点值的最大值，那么当前节点的res[0]就是左子节点两种情况的较大值加上右子节点两种情况的较大值，res[1]就是不包含左子节点值的最大值加上不包含右子节点值的最大值，和当前节点值之和，返回即可
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/hrIII337.cpp)
+---
+### #338 Counting Bits
+#### Difficulty: Medium
+#### Date: 2018/4/4
+#### Solution
+```
+1. 0
+2. 1
+3. 10
+   11
+4. 100 
+   101
+   110
+   111
+5. 在前面基础上加一
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cb338.cpp)
+---
 ### #342 Power of Four
 #### Difficulty: Easy
 #### Date: 2018/4/2
@@ -3344,6 +3402,23 @@
 3. 负面测试(no)
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/pof342.cpp)
+---
+### #343 Integer Break
+#### Difficulty: Medium
+#### Date: 2018/4/4
+#### Solution
+```
+1. 找数学规律
+2. 观察规律，我们可以看出从5开始，数字都需要先拆出所有的3，一直拆到剩下一个数为2或者4，因为剩4就不用再拆了，拆成两个2和不拆没有意义，而且4不能拆出一个3剩一个1，这样会比拆成2+2的乘积小。那么这样我们就可以写代码了，先预处理n为2和3的情况，然后先将结果res初始化为1，然后当n大于4开始循环，我们结果自乘3，n自减3，根据之前的分析，当跳出循环时，n只能是2或者4，再乘以res返回即可
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ib343.cpp)
 ---
 ### #344 Reverse String
 #### Difficulty: Easy
