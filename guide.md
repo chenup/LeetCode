@@ -3385,6 +3385,22 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/cb338.cpp)
 ---
+### #341 Flatten Nested List Iterator
+#### Difficulty: Medium
+#### Date: 2018/4/5
+#### Solution
+```
+1. 构造函数里面使用递归
+2. 也可以用栈迭代
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/fnli341.cpp)
+---
 ### #342 Power of Four
 #### Difficulty: Easy
 #### Date: 2018/4/2
@@ -3453,6 +3469,23 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/rvoas345.cpp)
 ---
+### #347 Top K Frequent Elements
+#### Difficulty: Medium
+#### Date: 2018/4/5
+#### Solution
+```
+1. hash表来保存数字出现的频率
+2. 用最大堆排序
+3. 也可以用桶排序,空间换时间 (设置nums.size个桶, 每个桶保存相同频率的数字, 最后从最大频率的桶开始往后遍历)
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/tkfe347.cpp)
+---
 ### #349 Intersection of Two Arrays
 #### Difficulty: Easy
 #### Date: 2018/4/2
@@ -3481,6 +3514,30 @@
 1. 功能测试
 2. 边界测试
 3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/iotaII350.cpp)
+---
+### #367 Valid Perfect Square
+#### Difficulty: Easy
+#### Date: 2018/4/6
+#### Solution
+```
+1. 1 = 1
+   4 = 1 + 3
+   9 = 1 + 3 + 5
+   16 = 1 + 3 + 5 + 7
+   25 = 1 + 3 + 5 + 7 + 9
+   36 = 1 + 3 + 5 + 7 + 9 + 11
+   ....
+   1+3+...+(2n-1) = (2n-1 + 1)n/2 = n*n
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+5. 二分法可能会超时
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/iotaII350.cpp)
 ---
