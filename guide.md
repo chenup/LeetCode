@@ -3517,6 +3517,23 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/iotaII350.cpp)
 ---
+### #355 Design Twitter
+#### Difficulty: Medium
+#### Date: 2018/4/10
+#### Solution
+```
+1. getNewsFeed的实现可以用最大堆或者hash表
+2. 用时间戳
+3. 自己可以follow自己
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/dt355.cpp)
+---
 ### #367 Valid Perfect Square
 #### Difficulty: Easy
 #### Date: 2018/4/6
@@ -3540,6 +3557,72 @@
 5. 二分法可能会超时
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/iotaII350.cpp)
+---
+### #371 Sum of Two Integers
+#### Difficulty: Easy
+#### Date: 2018/4/9
+#### Solution
+```
+1. a ^ b 代表a+b的非进位的值num
+2. (a & b) << 1 代表a+b的进位的值carry
+3. 如果carry为0则返回num，否则继续上述步骤
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/soti371.cpp)
+---
+### #383 Ransom Note
+#### Difficulty: Easy
+#### Date: 2018/4/9
+#### Solution
+```
+1. hash表或者int [26]
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/rn383.cpp)
+---
+### #387 First Unique Character in a String
+#### Difficulty: Easy
+#### Date: 2018/4/9
+#### Solution
+```
+1. hash表建立映射
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/fucias387.cpp)
+---
+### #389 First Unique Character in a String
+#### Difficulty: Easy
+#### Date: 2018/4/9
+#### Solution
+```
+1. hash表建立映射
+2. 用异或来抵消相同的元素
+3. 用加减法来抵消相同的元素
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/fucias387.cpp)
 ---
 ### #421 Maximum XOR of Two Numbers in an Array
 #### Difficulty: Medium
