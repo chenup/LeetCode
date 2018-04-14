@@ -3534,6 +3534,41 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/dt355.cpp)
 ---
+### #357 Count Numbers with Unique Digits
+#### Difficulty: Medium
+#### Date: 2018/4/12
+#### Solution
+```
+1. 一位数的满足要求的数字是10个(0到9)，二位数的满足题意的是81个
+2. 通项公式为f(k) = 9 * 9 * 8 * ... (9 - k + 2)，那么我们就可以根据n的大小，把[1, n]区间位数通过通项公式算出来累加起来即可
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/cnwud357.cpp)
+---
+### #365 Water and Jug Problem
+#### Difficulty: Medium
+#### Date: 2018/4/14
+#### Solution
+```
+1. 求最大公约数
+2. 这道问题其实可以转换为有一个很大的容器，我们有两个杯子，容量分别为x和y，问我们通过用两个杯子往里倒水，和往出舀水，问能不能使容器中的水刚好为z升。那么我们可以用一个公式来表达：z = m * x + n * y, 其中m，n为舀水和倒水的次数，正数表示往里舀水，负数表示往外倒水，那么题目中的例子可以写成: 4 = (-2) * 3 + 2 * 5，即3升的水罐往外倒了两次水，5升水罐往里舀了两次水。那么问题就变成了对于任意给定的x,y,z，存不存在m和n使得上面的等式成立
+3. 根据裴蜀定理，ax + by = d的解为 d = gcd(x, y)，那么我们只要只要z % d == 0
+4. 我们只要看z是不是x和y的最大公约数的倍数就行了，别忘了还有个限制条件 x + y >= z，因为x和y不可能称出比它们之和还多的水
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/wajp365.cpp)
+---
 ### #367 Valid Perfect Square
 #### Difficulty: Easy
 #### Date: 2018/4/6
@@ -3557,6 +3592,26 @@
 5. 二分法可能会超时
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/iotaII350.cpp)
+---
+### #368 Largest Divisible Subset
+#### Difficulty: Medium
+#### Date: 2018/4/14
+#### Solution
+```
+1. 动态规划
+2. 快排
+3. dp[i]表示到数字nums[i]位置最大可整除的子集合的长度，还需要一个一维数组parent，来保存上一个能整除的数字的位置，两个整型变量mx和mx_idx分别表示最大子集合的长度和起始数字的位置
+4. 从前往后遍历数组，对于某个数字再遍历到开头，在这个过程中，如果nums[i]能整除nums[j], 且dp[i] < dp[j] + 1的话，更新dp[i]和parent[i]，如果dp[i]大于mx了，还要更新mx和mx_idx
+5. 循环结束后，根据parent数组来找到每一个数字
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/lds368.cpp)
 ---
 ### #371 Sum of Two Integers
 #### Difficulty: Easy
