@@ -3631,6 +3631,76 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/soti371.cpp)
 ---
+### #372 Super Pow
+#### Difficulty: Medium
+#### Date: 2018/4/15
+#### Solution
+```
+1. 和Pow(x, n)的解法很类似，都得对半缩小，不同的是后面都要加上对1337取余
+2. 由于给定的指数b是一个一维数组的表示方法，我们要是折半缩小处理起来肯定十分不方便，所以我们采用按位来处理，比如2^23 = (2^2)^10 * 2^3, 所以我们可以从b的最高位开始，算出个结果存入res，然后到下一位是res的十次方再乘以a的该位次方再对1337取余
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/sp372.cpp)
+---
+### #373 Find K Pairs with Smallest Sums
+#### Difficulty: Medium
+#### Date: 2018/4/15
+#### Solution
+```
+1. 用最小堆或者map的自动排序
+2. 首先将[0, 0]放入最小堆中
+3. 取k次，每次取最小堆的堆顶元素，每次都需要将(i + 1, 0) (i < nums1.size() - 1)放入最小堆，并且将取出的最小元素(pos1, pos2)的下一个元素(pos1, pos2 + 1) (pos2 < nums2.size() - 1) 也放入最小堆
+4. 也可以用一个k*k的数组保存所有可能性，然后排序
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/fkpwss373.cpp)
+---
+### #374 Guess Number Higher or Lower
+#### Difficulty: Easy
+#### Date: 2018/4/18
+#### Solution
+```
+1. 折半查找
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/gnhol374.cpp)
+---
+### #375 Guess Number Higher or Lower II
+#### Difficulty: Medium
+#### Date: 2018/4/20
+#### Solution
+```
+1. 极小极大算法
+2. 动态规划
+3. 建立一个二维的dp数组，其中dp[i][j]表示从数字i到j之间猜中任意一个数字最少需要花费的钱数
+4. 那么我们需要遍历每一段区间[i, j]，维护一个全局最小值global_min变量，然后遍历该区间中的每一个数字，计算局部最大值local_max = k + max(dp[i][k - 1], dp[k + 1][j])，这个正好是将该区间在每一个位置都分为两段，然后取当前位置的花费加上左右两段中较大的花费之和为局部最大值，要cover所有的情况，就得取最坏的情况
+5. 然后更新全局最小值，最后在更新dp[i][j]的时候看i和j是否是相邻的，相邻的话赋为i，否则赋为global_min
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法好
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/gnholII375.cpp)
+---
 ### #383 Ransom Note
 #### Difficulty: Easy
 #### Date: 2018/4/9
