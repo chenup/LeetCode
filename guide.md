@@ -3701,6 +3701,58 @@
 ```
 [code link](https://github.com/chenup/LeetCode/blob/master/code/gnholII375.cpp)
 ---
+### #376 Wiggle Subsequence
+#### Difficulty: Medium
+#### Date: 2018/4/25
+#### Solution
+```
+1. greedy 或者 dp
+2. 维护两个变量p和q，然后遍历数组，如果当前数字比前一个数字大，则p=q+1，如果比前一个数字小，则q=p+1，最后取p和q中的较大值跟n比较，取较小的那个
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/ws376.cpp)
+---
+### #377 Combination Sum IV
+#### Difficulty: Medium
+#### Date: 2018/4/25
+#### Solution
+```
+1. 递归超时
+2. 动态规划，看成爬梯子问题
+3. 用一个一维数组dp，其中dp[i]表示目标数为i的解的个数，然后我们从1遍历到target，对于每一个数i，遍历nums数组，如果i >= x, dp[i] += dp[i - x]
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/csIV377.cpp)
+---
+### #378 Kth Smallest Element in a Sorted Matrix
+#### Difficulty: Medium
+#### Date: 2018/4/26
+#### Solution
+```
+1. 遍历矩阵，用最大堆来保存前k个数
+2. 用二分查找，时间复杂度是O(nlgX)，其中X为最大值和最小值的差值，我们并不用对每一行都做二分搜索法，我们注意到每列也是有序的，我们可以利用这个性质，从数组的左下角开始查找，如果比目标值小，我们就向右移一位，而且我们知道当前列的当前位置的上面所有的数字都小于目标值，那么cnt += i+1，反之则向上移一位，这样算出cnt的值
+3. 遍历完所有的行可以找出中间数是第几小的数，然后k比较，进行二分查找，left和right最终会相等，并且会变成数组中第k小的数字
+```
+#### Note
+```
+1. 功能测试
+2. 边界测试
+3. 负面测试(no)
+4. 百度大法
+```
+[code link](https://github.com/chenup/LeetCode/blob/master/code/kseiasm378.cpp)
+---
 ### #383 Ransom Note
 #### Difficulty: Easy
 #### Date: 2018/4/9
